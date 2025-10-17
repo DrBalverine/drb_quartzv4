@@ -1,0 +1,2 @@
+[[THE LIST]]
+Discuss ongoing conflicts, political tensions, or looming threats in your setting. Provide details about recent developments, important figures, and the potential consequences of these conflicts. This information will help ChatGPT incorporate current events into the adventure.

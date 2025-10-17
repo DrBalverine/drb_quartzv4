@@ -1,0 +1,6 @@
+---
+tags:
+  - Location
+  - Reserve
+  - Undead
+---

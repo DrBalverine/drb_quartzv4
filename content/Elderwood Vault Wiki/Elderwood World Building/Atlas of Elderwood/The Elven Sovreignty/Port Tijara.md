@@ -1,0 +1,9 @@
+---
+tags:
+  - Location
+---
+Primary port city of [[The Elven Sovereignty]]
+
+Port Tijara is the bustling hub for most trade on Elderwood. It is said you can be anyone from anywhere and conceivably end up lost under the bright silk awnings of the port's heaving bazaars. Port Tijara's districts are sprawling, disorganized affairs almost inevitably built around a bustling bazaar. Everything from mithril to spices changes hands in these trading hubs and they are festooned with brightly coloured fabrics, gaudily painted signs and exotic wares. Contracts of trade, seals of endorsement and bonds of marque are proudly displayed by vendors who hawk their goods to the people who fill the plazas and streets at all hours. In and around these cosmopolitan bazaars, the wealthiest families maintain sprawling estates. Often plain from the outside, Tijaran structures are alive with ostentation within and lined with ornate tapestries and finery. The most influential, such as the ruling guilds, thread their estates with running water and glittering fountains, sculptures and artefacts crafted from precious materials, beautiful rugs, carpets and hangings, the scents of incense and the sound of music. It is important that a home be beautiful, as well as secure, Your home, as one ancient poet put it, should be a comfort to your body, and a balm to your soul.
+
+This is in stark contrast to the docks and poorer districts where the disparity between the rich and the poor is too obvious to miss. Poverty and the more disreputable professions go hand in hand, where the extreme poor tire of being exploited by the grossly rich and decide to take a little bit back.

@@ -1,0 +1,2 @@
+[[THE LIST]]
+Share significant historical events that have shaped your world. Explain the origins of important artifacts, legendary figures, or mythical creatures. Provide any relevant information about prophecies, ancient civilizations, or forgotten ruins.

@@ -1,0 +1,1 @@
+https://valhyr.com/pages/rune-translator

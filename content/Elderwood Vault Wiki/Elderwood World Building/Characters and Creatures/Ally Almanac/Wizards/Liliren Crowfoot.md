@@ -1,0 +1,1 @@
+Apprentice to [[Magister Valtor]] Had her magic drained by Calvus to fuel Kalazar's resurrection.

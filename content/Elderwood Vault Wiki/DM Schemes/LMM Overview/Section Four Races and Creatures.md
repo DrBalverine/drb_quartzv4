@@ -1,0 +1,2 @@
+[[THE LIST]]
+Detail the different races or species inhabiting your world. Explain their physical attributes, cultural traits, and relationships with other races. If there are any unique creatures or monsters, describe their characteristics, behaviors, and habitats.

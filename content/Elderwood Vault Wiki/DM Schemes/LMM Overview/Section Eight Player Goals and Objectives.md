@@ -1,0 +1,2 @@
+[[THE LIST]]
+Clearly communicate the goals and objectives you want ChatGPT to focus on when generating adventures. Specify if there are any particular quests, challenges, or storylines you would like to include. You can also mention any moral dilemmas or choices you want the players to face

@@ -1,0 +1,11 @@
+---
+tags:
+  - History
+---
+The immense mission to rescue entrapped survivors of the ruin that became of the north. The military of [[The Elven Sovereignty]] took substantial losses in this endeavour and have since used the rescue as a debt to pressgang people of the cultures they rescued into various services. 
+
+Elves of the North, [[Goliath]], [[Taurus]], and [[Orc]] peoples were aided in pushing their way out of [[The Northern Wastes]] though the ash storms, blizzards and horde of demons and their heretical followers.
+It is an understatement to say that the [[Goliath]] population had been utterly decimated, their civilian population blindsided by the attack and practically destroyed. Through sheer determination the remaining warriors held the line, dug in deep, sacrificing everything to protect the last survivors from the many northern holds, praying for rescue.
+[[The Elven Sovereignty]] initially focused on rescuing their own but upon arrival, the firey breach now dubbed [[Ice Ringed Chaos]] was centred on their holds in that area and it is said of their old captial  that none survived. This coupled with the destruction of [[The Elven Sovereignty]] leader and court at [[The Wyvern Aerie]], slowed all response to a crawl and for some time the peoples of the north had to fend for themselves against the demon horde.
+
+With her commander presumed dead at The Wyvern Aerie, [[Vice Marshal Turel]] rallied the remaining forces to create a corridor of safety to channel refugees through into the southern lands. Many lost their lives in the perilous journey and even more servicemen died to hold the line against impossible numbers. The military about to be overwhelmed, fighting to the last to save as many as possible were saved themselves by The Wizards of [[The Crystal College]]. The Arch Mages of the Nine schools erected the vast magical barrier in the largest ritual performed in centuries. The Bulwark, named after the Goliath Duke who protected the survivors, saved Elderwood, stopping the tide of demons but the cost of this ritual is as yet unknown. The fight is not yet over even as the reality of this new situation set in, demons forever test The Bulwark's strength eager to conquer the civilized lands.

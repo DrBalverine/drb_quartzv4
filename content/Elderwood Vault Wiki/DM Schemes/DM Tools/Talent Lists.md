@@ -1,0 +1,1 @@
+https://sw-eote-srd.vercel.app/talents#list-of-all-talents

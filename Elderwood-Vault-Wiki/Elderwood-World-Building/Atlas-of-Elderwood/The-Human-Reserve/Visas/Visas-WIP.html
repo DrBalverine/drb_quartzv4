@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Visas WIP</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Visas WIP"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Visas WIP"/><meta name="twitter:description" content="Districts Overview 1: The Moonlight District An entertainment and market district. By day hustle and bustle of markets and artisan workshops."/><meta property="og:description" content="Districts Overview 1: The Moonlight District An entertainment and market district. By day hustle and bustle of markets and artisan workshops."/><meta property="og:image:alt" content="Districts Overview 1: The Moonlight District An entertainment and market district. By day hustle and bustle of markets and artisan workshops."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="Districts Overview 1: The Moonlight District An entertainment and market district. By day hustle and bustle of markets and artisan workshops."/><meta name="generator" content="Quartz"/><link href="../../../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvZHJiX3F1YXJ0enY0L2RyYl9xdWFydHp2NC9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-213"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-213" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/">Elderwood Vault Wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/">Elderwood World Building</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/">Atlas of Elderwood</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/">The Human Reserve</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/">Visas</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Visas WIP</a></div></nav><h1 class="article-title">Visas WIP</h1><p show-comma="true" class="content-meta"><time datetime="2025-10-17T12:29:17.000Z">Oct 17, 2025</time><span>10 min read</span></p></div></div><article class="popover-hint"><h1 id="districts-overview">Districts Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#districts-overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-the-moonlight-district">1: The Moonlight District<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-the-moonlight-district" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>An entertainment and market district. By day hustle and bustle of markets and artisan workshops. At night home to several small theatres, taverns, and inns. Named after the late night activities of the district, pale magical orbs illuminating the revelry and to some the cobbled streets seem to bare the pattern of the moon phases.</li>
+</ul>
+<h2 id="2-the-warrens">2: The Warrens<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-the-warrens" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Poorer densely populated, under control of criminals based out of Flind Street.</li>
+</ul>
+<h2 id="3-high-perch-estates">3: High Perch Estates<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-high-perch-estates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>More affluent |area outside the walls where noble estates, manors and grounds overlook the city from the hill. Their occupants both figuratively and literally looking down on the general populous.</li>
+</ul>
+<h2 id="4-crowfoot-terrace">4: Crowfoot Terrace<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-crowfoot-terrace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Main centre for exchange in the city. Where incoming and outgoing trade caravans are prepared. Multitudes of stalls, shops, and warehouses. General understanding is that the district earned its name due to the overlapping “claw-like” alleys radiating from its central plaza. Historians will also note the main tradehall being repurposed from an eladrin Corvax stable. Also home to a number of guildhalls influential to the city.</li>
+</ul>
+<h2 id="5-the-mist">5: The Mist<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-the-mist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A whole district locked down and abandoned due to a horrible catastrophe, it is still horribly haunted to this day, that occasionally spills over into other areas. Criminals can request a “Trial by Mist” wherein they are made to spend a night in The Mist and if they survive they are acquitted.</li>
+</ul>
+<h2 id="6-the-manaflood">6: The Manaflood<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-the-manaflood" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Area irradiated with magic from wizard experiments long ago.</li>
+</ul>
+<h2 id="7-shardspire-ward">7: Shardspire Ward<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-shardspire-ward" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Large residential and commercial district dominated by a wizard academy wherein they study crystal shards left over from a war with a psionic gemstone dragon.</li>
+</ul>
+<h2 id="8-coronet-parade">8: Coronet Parade<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-coronet-parade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Area for the municipal and military factions. Coronet Parade refers to both the crown (who they serve) but also the hooves of cavalry and the soldiers plumes, made from coronet bird feathers. They parade as a show of force but also this area houses jousting arenas and other sports wherein nobles gain favour.</li>
+</ul>
+<h2 id="9-lantern-veil-wharf">9: Lantern Veil Wharf<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-lantern-veil-wharf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>More respectable docklands, hub of industry and trade. Lantern Veil refers to the numerous lanters that hang like bunting crisscrossing the streets here so work can go on all through the night.</li>
+</ul>
+<h2 id="10-duskridge-crossing">10: Duskridge Crossing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-duskridge-crossing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Westerly entrance to the city, this area sits outside the walls and refers to crossing the moat river around the city.</li>
+</ul>
+<h2 id="11-arx-regnatrix">11: Arx Regnatrix<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-arx-regnatrix" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Residence of Lady Visas enigmatic ruler of the city and the area also houses her government and noble court.</li>
+</ul>
+<h2 id="12-the-fangs">12: The Fangs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-the-fangs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Docklands named after the two large towers that dominate it, remnants from larger fortifications long gone now.</li>
+</ul>
+<h2 id="13-sableston-cross">13: Sableston Cross<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-sableston-cross" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Hub for the city’s working-class artisans and craftsmen, their families and necessary utilities to keep the city running.</li>
+</ul>
+<h2 id="14-fellview-village">14: Fellview Village<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-fellview-village" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Village overlooking rolling hills to the north west of <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas" class="internal" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas">Visas</a>. Large farming community likely under the thumb of their noble landlords.</li>
+</ul>
+<h2 id="15-pillar-meridian">15: Pillar-Meridian<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-pillar-meridian" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Central Island where the Synod and Crystal College have their HQ. Named after a literal translation of the elven name for the place.</li>
+</ul>
+<h2 id="16-elverpot-cove">16: Elverpot Cove<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#16-elverpot-cove" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Poorer area docklands, known for eel fisheries and smuggling.</li>
+</ul>
+<h2 id="17-willowmere">17: Willowmere<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#17-willowmere" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Affluent residential district with tranquil canals, tree-lined streets, and elegant townhouses home to merchants and minor nobles. Known for the Willow Promenade and boutique artisan workshops, it exudes quiet prosperity. Beneath its charm, rivalries and clandestine dealings hint at hidden tensions. Wherever there are nobles and money you will find Flind Street and The Troupe.</li>
+</ul>
+<h2 id="18-the-spelt-belt">18: The Spelt Belt<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#18-the-spelt-belt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Noble estates, likely landowners, named after the spelt for farming and its gold colour indicating wealth.</li>
+</ul>
+<h2 id="19-the-undercity">19: The Undercity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#19-the-undercity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The labyrinth of tunnels and abandoned buildings beneath the city, now home to monsters but with many forgotten treasures to find.</li>
+</ul>
+<p>District:  Where the fuck<br/>
+POI: What it is, Neat thing about it
+Notable NPC:  Name, Species, Occupation, Feature</p>
+<h1 id="districts-old-style">Districts Old Style<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#districts-old-style" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-moonlight-district">1 Moonlight District<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-moonlight-district" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="2-the-warrens-1">2 The Warrens<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-the-warrens-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Poorer, densely populated district, rife with crime.</p>
+<h3 id="features-1">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-1">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="3-high-perch-estates-1">3 High Perch Estates<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-high-perch-estates-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-2">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-2">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="4-crowfoot-terrace-1">4 Crowfoot Terrace<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-crowfoot-terrace-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-3">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-3">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="5-mist">5 Mist<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-mist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-4">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-4">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="6-mana-flood">6 Mana Flood<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-mana-flood" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-5">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-5">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="7-shardspire-ward-1">7 Shardspire Ward<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-shardspire-ward-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-6">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-6">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="8-coronet-parade-1">8 Coronet Parade<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-coronet-parade-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-7">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-7">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="9-lanternveil-wharf">9 Lanternveil Wharf<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-lanternveil-wharf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-8">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-8" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-8">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-8" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="10-duskridge-crossing-1">10 Duskridge Crossing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-duskridge-crossing-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-9">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-9" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-9">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-9" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="11-arx-regnatrix-1">11 Arx Regnatrix<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-arx-regnatrix-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Where Lady Visas and her Court lives.</p>
+<h3 id="features-10">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-10" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Nightspear Palace</li>
+</ul>
+<h3 id="npcs-10">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-10" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+<li>
+<p>Lady Visas, <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Races-of-Elderwood/Human" class="internal" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Races-of-Elderwood/Human">Human</a>, Ruler</p>
+</li>
+</ul>
+<h2 id="12-the-fangs-1">12 The Fangs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-the-fangs-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Docklands named after the two large towers that dominate it, remnants from larger fortifications long gone now.</p>
+<h3 id="features-11">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-11" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-11">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-11" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="13-sableston-cross-1">13 Sableston Cross<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#13-sableston-cross-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-12">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-12" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-12">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-12" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="14-fellview-village-1">14 Fellview Village<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#14-fellview-village-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Village overlooking rolling hills to the north west of Visas. Large farming community</p>
+<h3 id="features-13">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-13" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-13">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-13" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="15-pillar-meridian-1">15 Pillar-Meridian<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#15-pillar-meridian-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Central Island where the Synod and Crystal College have their HQ. Named after a literal translation of the Eladrin name for the place.</p>
+<h3 id="features-14">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-14" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-14">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-14" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="16-elverpot-cove-1">16 Elverpot Cove<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#16-elverpot-cove-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Poorer area docklands, known for eel fisheries and smuggling</p>
+<h3 id="features-15">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-15" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-15">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-15" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="17-willowmere-1">17 Willowmere<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#17-willowmere-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Upper middleclass district</p>
+<h3 id="features-16">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-16" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-16">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-16" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>NAME, SPECIES, ROLE</p>
+</li>
+</ul>
+<h2 id="18-the-spelt-belt-1">18 The Spelt Belt<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#18-the-spelt-belt-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Noble estates, likely landowners, named after the spelt for farming and its gold colour,</p>
+<h3 id="features-17">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-17" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-17">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-17" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>NAME, SPECIES, ROLE</li>
+</ul>
+<h2 id="19-the-undercity-1">19 The Undercity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#19-the-undercity-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Overview Description</p>
+<h3 id="features-18">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features-18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li></li>
+</ul>
+<h3 id="npcs-18">NPCS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#npcs-18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>NAME, SPECIES, ROLE</li>
+</ul>
+<p>District List.
+Number, name, description.
+1: The Moonlight District - An entertainment and market district. By day hustle and bustle of markets and artisan workshops. At night home to several small theatres, taverns, and inns. Named after the late night activities of the district, pale magical orbs illuminating the revelry and to some the cobbled streets seem to bare the pattern of the moon phases.</p>
+<p>2: The Warrens - Poorer densely populated, under control of criminals based out of Flind Street.</p>
+<p>3: High Perch Estates - More affluent area outside the walls where noble estates, manors and grounds overlook the city from the hill. Their occupants both figuratively and literally looking down on the general populous.</p>
+<p>4: Crowfoot Terrace - Main centre for exchange in the city. Where incoming and outgoing trade caravans are prepared. Multitudes of stalls, shops, and warehouses. General understanding is that the district earned its name due to the overlapping “claw-like” alleys radiating from its central plaza. Historians will also note the main tradehall being repurposed from an eladrin Corvax stable. Also home to a number of guildhalls influential to the city.</p>
+<p>5: The Mist - A whole district locked down and abandoned due to a horrible catastrophe, it is still horribly haunted to this day, that occasionally spills over into other areas. Criminals can request a “Trial by Mist” wherein they are made to spend a night in The Mist and if they survive they are acquitted.</p>
+<p>6: The Manaflood - Area irradiated with magic from wizard experiments long ago.</p>
+<p>7: Shardspire Ward - Large residential and commercial district dominated by a wizard academy wherein they study crystal shards left over from a war with a psionic gemstone dragon.</p>
+<p>8: Coronet Parade - Area for the municipal and military factions. Coronet Parade refers to both the crown (who they serve) but also the hooves of cavalry and the soldiers plumes, made from coronet bird feathers. They parade as a show of force but also this area houses jousting arenas and other sports wherein nobles gain favour.</p>
+<p>9: Lantern Veil Wharf - More respectable docklands, hub of industry and trade. Lantern Veil refers to the numerous lanters that hang like bunting crisscrossing the streets here so work can go on all through the night.</p>
+<p>10: Duskridge Crossing - Westerly entrance to the city, this area sits outside the walls and refers to crossing the moat river around the city.</p>
+<p>11: Arx Regnatrix - Residence of Lady Visas enigmatic ruler of the city and the area also houses her government and noble court.</p>
+<p>12: The Fangs: Docklands named after the two large towers that dominate it, remnants from larger fortifications long gone now.</p>
+<p>13: Sableston Cross -  Hub for the city’s working-class artisans and craftsmen, their families and necessary utilities to keep the city running.</p>
+<p>14: Fellview Village - Village overlooking rolling hills to the north west of Visas. Large farming community likely under the thumb of their noble landlords.</p>
+<p>15: Pillar-Meridian - Central Island where the Synod and Crystal College have their HQ. Named after a literal translation of the elven name for the place.</p>
+<p>16: Elverpot Cove - Poorer area docklands, known for eel fisheries and smuggling.</p>
+<p>17: Willowmere -  Affluent residential district with tranquil canals, tree-lined streets, and elegant townhouses home to merchants and minor nobles. Known for the Willow Promenade and boutique artisan workshops, it exudes quiet prosperity. Beneath its charm, rivalries and clandestine dealings hint at hidden tensions. Wherever there are nobles and money you will find Flind Street and The Troupe.</p>
+<p>18: The Spelt Belt: Noble estates, likely landowners, named after the spelt for farming and its gold colour indicating wealth.</p>
+<p>19: The Undercity - The labyrinth of tunnels and abandoned buildings beneath the city, now home to monsters but with many forgotten treasures to find.</p>
+<ol>
+<li>The Moonlight District</li>
+</ol>
+<p>A lively area situated close to the river, known for its vibrant nightlife and cultural gatherings. By day, the district features a mix of market squares and artist workshops. By night, the area transforms into a haven for minstrels, performers, and revelers, illuminated by magical moonlit globes hanging from wrought iron streetlamps. The district is home to several small theatres, taverns, and inns. Its name comes from both its nocturnal charm and the legend of a tragic bard who sang to the moon, haunting the area with their melodies.</p>
+<p>Key Features:</p>
+<pre><code>A famous open-air amphitheater hosting plays and duels of wit.
+Artisan shops selling fine wares, magical trinkets, and exotic goods.
+Streets known for their cobbled patterns resembling moon phases.
+</code></pre>
+<p>4. Crowfoot Terrace</p>
+<p>The city’s primary merchant and trade hub, Crowfoot Terrace is a densely packed warren of narrow streets lined with stalls, shops, and warehouses. The district earned its name due to the overlapping “claw-like” alleys radiating from its central plaza. Merchants and artisans compete for space here, offering everything from spices to enchanted curiosities. The terrace also houses a prominent guildhall for traders and a clock tower that marks the start and end of the trading day.</p>
+<p>Key Features:</p>
+<pre><code>A bustling central market square.
+Guild offices and merchant houses.
+A &quot;Bargain Bell&quot; rung at midday to signal sales or auctions.
+</code></pre>
+<p>13. Sableston Cross</p>
+<p>An area of industry and infrastructure, Sableston Cross is a hub for the city’s working-class artisans and craftsmen. Named for its distinctive pale stonework, the district is a maze of workshops, smithies, and warehouses. Sableston Cross is vital to Visas, producing weapons, tools, and other essential goods. Despite its utilitarian nature, the district is not without charm, with intricate carvings on many buildings showcasing the pride of its artisans.</p>
+<p>Key Features:</p>
+<pre><code>The Great Forge: A massive communal smithy powered by enchanted bellows.
+Rows of brick kilns, dye houses, and textile mills.
+A canal system connecting workshops to the docks.
+</code></pre>
+<p>19. The Undercity (Updated Overview)</p>
+<p>More than just a labyrinth of forgotten tunnels, the Undercity is a place where remnants of the city’s dark history linger. Long ago, Visas was built over older settlements, and the Undercity holds their remnants. Hidden vaults, catacombs, and even the occasional buried temple lie beneath the surface. In recent years, scavengers, cultists, and desperate souls have sought refuge here, creating a shadow society in the depths.</p>
+<p>Key Features:</p>
+<pre><code>Hidden entrances scattered across the city.
+“The Pit Market,” a black market accessible through the Undercity.
+Stories of cursed treasures and creatures lurking in the dark.
+</code></pre></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-18" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#districts-overview" data-for="districts-overview">Districts Overview</a></li><li class="depth-1"><a href="#1-the-moonlight-district" data-for="1-the-moonlight-district">1: The Moonlight District</a></li><li class="depth-1"><a href="#2-the-warrens" data-for="2-the-warrens">2: The Warrens</a></li><li class="depth-1"><a href="#3-high-perch-estates" data-for="3-high-perch-estates">3: High Perch Estates</a></li><li class="depth-1"><a href="#4-crowfoot-terrace" data-for="4-crowfoot-terrace">4: Crowfoot Terrace</a></li><li class="depth-1"><a href="#5-the-mist" data-for="5-the-mist">5: The Mist</a></li><li class="depth-1"><a href="#6-the-manaflood" data-for="6-the-manaflood">6: The Manaflood</a></li><li class="depth-1"><a href="#7-shardspire-ward" data-for="7-shardspire-ward">7: Shardspire Ward</a></li><li class="depth-1"><a href="#8-coronet-parade" data-for="8-coronet-parade">8: Coronet Parade</a></li><li class="depth-1"><a href="#9-lantern-veil-wharf" data-for="9-lantern-veil-wharf">9: Lantern Veil Wharf</a></li><li class="depth-1"><a href="#10-duskridge-crossing" data-for="10-duskridge-crossing">10: Duskridge Crossing</a></li><li class="depth-1"><a href="#11-arx-regnatrix" data-for="11-arx-regnatrix">11: Arx Regnatrix</a></li><li class="depth-1"><a href="#12-the-fangs" data-for="12-the-fangs">12: The Fangs</a></li><li class="depth-1"><a href="#13-sableston-cross" data-for="13-sableston-cross">13: Sableston Cross</a></li><li class="depth-1"><a href="#14-fellview-village" data-for="14-fellview-village">14: Fellview Village</a></li><li class="depth-1"><a href="#15-pillar-meridian" data-for="15-pillar-meridian">15: Pillar-Meridian</a></li><li class="depth-1"><a href="#16-elverpot-cove" data-for="16-elverpot-cove">16: Elverpot Cove</a></li><li class="depth-1"><a href="#17-willowmere" data-for="17-willowmere">17: Willowmere</a></li><li class="depth-1"><a href="#18-the-spelt-belt" data-for="18-the-spelt-belt">18: The Spelt Belt</a></li><li class="depth-1"><a href="#19-the-undercity" data-for="19-the-undercity">19: The Undercity</a></li><li class="depth-0"><a href="#districts-old-style" data-for="districts-old-style">Districts Old Style</a></li><li class="depth-1"><a href="#1-moonlight-district" data-for="1-moonlight-district">1 Moonlight District</a></li><li class="depth-2"><a href="#features" data-for="features">Features</a></li><li class="depth-2"><a href="#npcs" data-for="npcs">NPCS</a></li><li class="depth-1"><a href="#2-the-warrens-1" data-for="2-the-warrens-1">2 The Warrens</a></li><li class="depth-2"><a href="#features-1" data-for="features-1">Features</a></li><li class="depth-2"><a href="#npcs-1" data-for="npcs-1">NPCS</a></li><li class="depth-1"><a href="#3-high-perch-estates-1" data-for="3-high-perch-estates-1">3 High Perch Estates</a></li><li class="depth-2"><a href="#features-2" data-for="features-2">Features</a></li><li class="depth-2"><a href="#npcs-2" data-for="npcs-2">NPCS</a></li><li class="depth-1"><a href="#4-crowfoot-terrace-1" data-for="4-crowfoot-terrace-1">4 Crowfoot Terrace</a></li><li class="depth-2"><a href="#features-3" data-for="features-3">Features</a></li><li class="depth-2"><a href="#npcs-3" data-for="npcs-3">NPCS</a></li><li class="depth-1"><a href="#5-mist" data-for="5-mist">5 Mist</a></li><li class="depth-2"><a href="#features-4" data-for="features-4">Features</a></li><li class="depth-2"><a href="#npcs-4" data-for="npcs-4">NPCS</a></li><li class="depth-1"><a href="#6-mana-flood" data-for="6-mana-flood">6 Mana Flood</a></li><li class="depth-2"><a href="#features-5" data-for="features-5">Features</a></li><li class="depth-2"><a href="#npcs-5" data-for="npcs-5">NPCS</a></li><li class="depth-1"><a href="#7-shardspire-ward-1" data-for="7-shardspire-ward-1">7 Shardspire Ward</a></li><li class="depth-2"><a href="#features-6" data-for="features-6">Features</a></li><li class="depth-2"><a href="#npcs-6" data-for="npcs-6">NPCS</a></li><li class="depth-1"><a href="#8-coronet-parade-1" data-for="8-coronet-parade-1">8 Coronet Parade</a></li><li class="depth-2"><a href="#features-7" data-for="features-7">Features</a></li><li class="depth-2"><a href="#npcs-7" data-for="npcs-7">NPCS</a></li><li class="depth-1"><a href="#9-lanternveil-wharf" data-for="9-lanternveil-wharf">9 Lanternveil Wharf</a></li><li class="depth-2"><a href="#features-8" data-for="features-8">Features</a></li><li class="depth-2"><a href="#npcs-8" data-for="npcs-8">NPCS</a></li><li class="depth-1"><a href="#10-duskridge-crossing-1" data-for="10-duskridge-crossing-1">10 Duskridge Crossing</a></li><li class="depth-2"><a href="#features-9" data-for="features-9">Features</a></li><li class="depth-2"><a href="#npcs-9" data-for="npcs-9">NPCS</a></li><li class="depth-1"><a href="#11-arx-regnatrix-1" data-for="11-arx-regnatrix-1">11 Arx Regnatrix</a></li><li class="depth-2"><a href="#features-10" data-for="features-10">Features</a></li><li class="depth-2"><a href="#npcs-10" data-for="npcs-10">NPCS</a></li><li class="depth-1"><a href="#12-the-fangs-1" data-for="12-the-fangs-1">12 The Fangs</a></li><li class="depth-2"><a href="#features-11" data-for="features-11">Features</a></li><li class="depth-2"><a href="#npcs-11" data-for="npcs-11">NPCS</a></li><li class="depth-1"><a href="#13-sableston-cross-1" data-for="13-sableston-cross-1">13 Sableston Cross</a></li><li class="depth-2"><a href="#features-12" data-for="features-12">Features</a></li><li class="depth-2"><a href="#npcs-12" data-for="npcs-12">NPCS</a></li><li class="depth-1"><a href="#14-fellview-village-1" data-for="14-fellview-village-1">14 Fellview Village</a></li><li class="depth-2"><a href="#features-13" data-for="features-13">Features</a></li><li class="depth-2"><a href="#npcs-13" data-for="npcs-13">NPCS</a></li><li class="depth-1"><a href="#15-pillar-meridian-1" data-for="15-pillar-meridian-1">15 Pillar-Meridian</a></li><li class="depth-2"><a href="#features-14" data-for="features-14">Features</a></li><li class="depth-2"><a href="#npcs-14" data-for="npcs-14">NPCS</a></li><li class="depth-1"><a href="#16-elverpot-cove-1" data-for="16-elverpot-cove-1">16 Elverpot Cove</a></li><li class="depth-2"><a href="#features-15" data-for="features-15">Features</a></li><li class="depth-2"><a href="#npcs-15" data-for="npcs-15">NPCS</a></li><li class="depth-1"><a href="#17-willowmere-1" data-for="17-willowmere-1">17 Willowmere</a></li><li class="depth-2"><a href="#features-16" data-for="features-16">Features</a></li><li class="depth-2"><a href="#npcs-16" data-for="npcs-16">NPCS</a></li><li class="depth-1"><a href="#18-the-spelt-belt-1" data-for="18-the-spelt-belt-1">18 The Spelt Belt</a></li><li class="depth-2"><a href="#features-17" data-for="features-17">Features</a></li><li class="depth-2"><a href="#npcs-17" data-for="npcs-17">NPCS</a></li><li class="depth-1"><a href="#19-the-undercity-1" data-for="19-the-undercity-1">19 The Undercity</a></li><li class="depth-2"><a href="#features-18" data-for="features-18">Features</a></li><li class="depth-2"><a href="#npcs-18" data-for="npcs-18">NPCS</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../../../../postscript.js" type="module"></script></html>

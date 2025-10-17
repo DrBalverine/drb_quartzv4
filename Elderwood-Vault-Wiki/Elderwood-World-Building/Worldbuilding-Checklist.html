@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Worldbuilding Checklist</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Worldbuilding Checklist"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Worldbuilding Checklist"/><meta name="twitter:description" content="A World Building Checklist When a game master is working on creating a world, there are a lot of details to work out."/><meta property="og:description" content="A World Building Checklist When a game master is working on creating a world, there are a lot of details to work out."/><meta property="og:image:alt" content="A World Building Checklist When a game master is working on creating a world, there are a lot of details to work out."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="A World Building Checklist When a game master is working on creating a world, there are a lot of details to work out."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvZHJiX3F1YXJ0enY0L2RyYl9xdWFydHp2NC9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Worldbuilding-Checklist"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-419"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-419" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Elderwood-Vault-Wiki/">Elderwood Vault Wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../Elderwood-Vault-Wiki/Elderwood-World-Building/">Elderwood World Building</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Worldbuilding Checklist</a></div></nav><h1 class="article-title">Worldbuilding Checklist</h1><p show-comma="true" class="content-meta"><time datetime="2025-10-17T12:29:17.000Z">Oct 17, 2025</time><span>41 min read</span></p></div></div><article class="popover-hint"><p>A World Building Checklist</p>
+<p>When a game master is working on creating a world, there are a lot of details to work out. Many a time I’ve thought I had a handle on a self-created milieu only to have a player ask for some information I’d not even thought to cover (it’s amazing what those pesky players can be interested in at times!). What I needed was a general checklist of things so that all my bases were covered, so to speak.</p>
+<p>To that end, I’ve shamelessly stolen this idea. It used to be available on its own website, but it’s since gone offline. It looks like it might come up eventually again at <a href="http://www.btot.de/index-en.html" class="external">www.btot.de<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, but as of this writing it’s not there yet. Luckily, I’d saved a copy. Of course, it’s been modified to my own needs, but you’re welcome to take it, leave it, or adjust it to your own needs as well.</p>
+<p>It is, as ever, a work in progress. Here, at top, is a brief outline. Each topic links to some questions, below, to help refine the topic presented.</p>
+<p>Things Worlds Have</p>
+<ol>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#economy" class="external">Economy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#government" class="external">Government<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#crimelegalsystem" class="external">Crime &amp; Legal System<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#foreignrelations" class="external">Foreign Relations<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#politics" class="external">Politics<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#war" class="external">War<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#theland" class="external">The Land<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#physicalhistoricalfeatures" class="external">Physical &amp; Historical Features<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#climategeography" class="external">Climate &amp; Geography<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#naturalresources" class="external">Natural Resources<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#population" class="external">Population<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#ruralfactors" class="external">Rural Factors<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#urbanfactors" class="external">Urban Factors<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#societyculture" class="external">Society &amp; Culture<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#artsentertainmentrecration" class="external">Arts, Entertainment, &amp; Recreation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#architecture" class="external">Architecture<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#calendar" class="external">Calendar<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#dailylife" class="external">Daily Life<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#diet" class="external">Diet<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#diningcustoms" class="external">Dining Customs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#education" class="external">Education<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#ethicsvalues" class="external">Ethics &amp; Values<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#fashiondress" class="external">fashion &amp; Dress<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#history" class="external">History<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#language" class="external">Language<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#gestures" class="external">Gestures<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#manners" class="external">Manners<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#meetinggreeting" class="external">Meeting &amp; Greeting<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#religionphilosophy" class="external">Religion &amp; Philosophy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#socialorganization" class="external">Social Organization<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#specificcountries" class="external">Specific Countries<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#visits" class="external">Visits<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#magicscience" class="external">Magic &amp; Science<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#magicmagicians" class="external">Magic &amp; Magicians<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#magictechnology" class="external">Magic &amp; Technology<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#rulesmagic" class="external">Rules of Magic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#wizards" class="external">Wizards<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#medicine" class="external">Medicine<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#sciencetechnology" class="external">Science &amp; Technology<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html#transportationcommunication" class="external">Transportation &amp; Communication<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ol>
+<p>Refining the Topics</p>
+<p>Thinking about each topic produces several questions that might need to be answered.</p>
+<p>Economy</p>
+<ul>
+<li>What goods are produced and where are they produced?</li>
+<li>What are the major trade goods?</li>
+<li>Are there trading centres?</li>
+<li>What economic systems are used?</li>
+<li>Are there banks?</li>
+<li>Do people barter or use money? (example: <a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding-moneyancientegypt.html" class="external">Ancient Ægypt<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>If money is used, is it valuable itself or is it fiat currency?</li>
+<li>If there is fiat money, who guarantees it?</li>
+<li>What are people’s attitudes toward money?</li>
+<li>What are people’s attitudes toward poverty?</li>
+<li>Are there generally acceptable standards for coins?</li>
+<li>How easy and common is counterfeiting?</li>
+</ul>
+<p>Government</p>
+<ul>
+<li>What services does the government or head-of-state provide?</li>
+<li>Are schools, wells, courts, and the army paid for by taxes?</li>
+<li>What local or private services are provided by the government?</li>
+<li>What services do people expect from their government?</li>
+<li>What do people owe their government?</li>
+<li>Do people pay their government in taxes, in labour, in crops, in military service?</li>
+<li>Who has the right to levy taxes?</li>
+<li>For what purposes are taxes (or new taxes) levied?</li>
+<li>On what or on whom are taxes levied?</li>
+<li>Can taxes be paid in-kind, or do certain things always require money?</li>
+<li>Who provides support services for the head of state and what are they called (examples: councilors, ministers, secretaries, viziers)?</li>
+<li>Are offices hereditary, elected, or appointed?</li>
+<li>Can a government office be a career choice?</li>
+<li>Is the relative power of a country or ruler usually measured by the size of the army, the number and ability of the wizards, or the amount of money and trade flowing through it?</li>
+<li>Who will take over running the government if the current head-of-state is incapacitated?</li>
+<li>How is succession determined?</li>
+<li>Is there an heir apparent (either actual or political)?</li>
+<li>What happens if the heir is a child?</li>
+<li>Who is responsible for protecting the head-of-state?</li>
+<li>What safeguards does the head-of-state have against assassins, poison, assault, and magical attack?</li>
+<li>Who can give orders (to the military, to the tax collectors, to the civil servants, to ordinary folks on the street)?</li>
+<li>How are the people with the power to give orders chosen?</li>
+<li>Are any activities licensed or certified (driving, dog ownership, being an attorney or a physician)?</li>
+<li>Who does the certification or licensing?</li>
+<li>Is it merely formal (pay a fee, and get a license), or are there qualifications to meet?</li>
+<li>Can licenses or certifications be revoked, and if so, how?</li>
+</ul>
+<ol>
+<li>Crime &amp; the Legal System</li>
+</ol>
+<ul>
+<li>What are considered normal and legal ways of gathering evidence and determining guilt?</li>
+<li>Are torture and magic part of the legal system?</li>
+<li>Are arbitrary judgements by a lord or landowner allowed, or is there a standard that they are supposed to follow?</li>
+<li>Is there an appeal system?</li>
+<li>How high can a case go in the system before it is finally settled?</li>
+<li>Is everyone tried in the same courts or are there special courts for special classes of people — for example, are mages tried in specialized wizard’s court?</li>
+<li>Are there separate courts for civil and criminal matters?</li>
+<li>Are there separate courts for magical and non-magical matters?</li>
+<li>Are there separate courts for humans and non-humans?</li>
+<li>Are there separate courts for religious matters?</li>
+<li>what things are considered truly serious crimes and why (example: a trade-oriented culture might consider counterfeiting or bootlegging a death-penalty crime while in a place where life is cheap murder might be something that only results in a small fine)?</li>
+<li>What are the punishments for serious versus minor crimes?</li>
+<li>Are there prisons, or are people punished and released?</li>
+<li>Are there degrees of punishment such as fines, branding, public whippings, removal of body parts, executions — or do they just hang everybody regardless of the crime?</li>
+<li>Who is responsible for catching criminals?</li>
+<li>Who pays the thief takers?</li>
+<li>Who pays for prisons and jails?</li>
+<li>Who supplies food to prisoners?</li>
+<li>How are law enforcement officers organized?</li>
+<li>Are there independent precincts, overlapping districts, or separate jurisdictions?</li>
+<li>Can law enforcement be hired?</li>
+<li>Are there lawyers or advocates?</li>
+<li>Who can afford legal representation?</li>
+<li>Who trains the legal experts and are they certified?</li>
+<li>Are people guilty until proven innocent, innocent until proven guilty, or does it depend on the mood the bench is in when the case comes in front of it?</li>
+<li>Are there assumptions made about how an accused criminals will be treated?</li>
+<li>Are there judges other than the nobles or gentry?</li>
+<li>How are judges paid and by whom?</li>
+<li>How often are remote areas likely to see a judge?</li>
+<li>Is mob justice common? Is it legal?</li>
+<li>How is mob justice viewed by society?</li>
+<li>Are highwaymen, muggers, bandits, or pirates common or rare?</li>
+<li>What sorts of crimes would the average citizen be likely encounter in their lifetime?</li>
+<li>Who can make or repeal laws?</li>
+<li>How are alleged criminals treated before their trials?</li>
+<li>How are convicted criminals treated?</li>
+<li>Do the police, military, or city guard make a practise of roughing up suspects?</li>
+<li>Are there laws forbidding certain types of people (peasants, wizards, priests, women) from carrying arms?</li>
+<li>Are there laws requiring certain people to be skilled with certain weapons?</li>
+<li>Are certain spells (as opposed to magic generally) illegal?</li>
+<li>How would a criminal magician be detected? Apprehended? Punished?</li>
+</ul>
+<ol start="3">
+<li>Foreign Relations</li>
+</ol>
+<ul>
+<li>Which nations have formal relations with other countries?</li>
+<li>Who can be ambassadors and envoys?</li>
+<li>Are there standing embassies and consulates, or are envoys sent only when something specific comes up?</li>
+<li>How are treaties arranged?</li>
+<li>Are there any significant ones currently in force or coming up for signing?</li>
+<li>How much do official attitudes toward other countries affect commerce and trade?</li>
+<li>Do merchants pretty much ignore tensions between governments as long as they can make a profit, or will this get them into trouble?</li>
+<li>How much formal spying and intelligence gathering is normally done by governments?</li>
+<li>How much spying is done by the military?</li>
+<li>Do merchants (or companies) engage in espionage?</li>
+<li>Who has the best information gathering system?</li>
+<li>Which countries are traditional allies?</li>
+<li>Which countries are traditional rivals?</li>
+<li>How do these traditional alliances and rivalries affect foreign policy?</li>
+<li>Which heads-of-state are related by blood or marriage?</li>
+<li>How important are political marriages?</li>
+<li>How do ties of blood and marriage affect foreign policy?</li>
+</ul>
+<ol start="5">
+<li>Politics</li>
+</ol>
+<ul>
+<li>Does the level of technological advancement match the level of social and political advancement?</li>
+<li>What are the major political factions at present?</li>
+<li>How long have the current political factions been around?</li>
+<li>Which factions are allies and which are enemies?</li>
+<li>Are there any potential new forces on the political scene?</li>
+<li>How much influence do special interest groups (such as merchants, wizards, or religious sects) have on politics?</li>
+<li>How do interest groups exercise their influence?</li>
+<li>What political positions are considered conservative?</li>
+<li>What political positions are considered liberal?</li>
+<li>Are there political positions that are unthinkable?</li>
+<li>Are there any shaky political alliances between disparate groups?</li>
+<li>Why were the current alliances formed?</li>
+<li>How long before current alliances fall apart, and, when they do, what will the effects be?</li>
+<li>What ancient rivalries and hatreds still affect current attitudes and political positions?</li>
+</ul>
+<ol start="7">
+<li>War</li>
+</ol>
+<ul>
+<li>Which peoples, countries, and races have been in conflict in the recent past?</li>
+<li>what caused recent conflicts?</li>
+<li>When was the last war and what was it about?</li>
+<li>Who won the last war?</li>
+<li>Are there ongoing tensions from the most recent war?</li>
+<li>What major weapons of war are available?</li>
+<li>How much has the presence of magic affected strategy and tactics?</li>
+<li>Do army commanders have to use specific formations or techniques to deal with possible magical attacks?</li>
+<li>How can magic be used as part of a battle plan?</li>
+<li>How are armies usually structured?</li>
+<li>Are command structures formal and independent or is everybody officially under the command of the lord who brought them to army?</li>
+<li>If there is a formal structure, what are the various ranks and titles?</li>
+<li>Who can call up an army?</li>
+<li>How are the ranks filled in times of need?</li>
+<li>Are there professional soldiers and mercenaries?</li>
+<li>Is a career in the army possible, or would one have to be a mercenary in order to make a living as a soldier?</li>
+<li>Does the army accept volunteers?</li>
+<li>How large is a typical army?</li>
+<li>In an army, what percentage of the soldiers will be trained and what portion will be untrained recruits?</li>
+<li>Are recruits and conscripts given training, or are they expected to learn on the battlefield?</li>
+<li>How is the army supplied?</li>
+<li>Are soldiers allowed to live off the land and peasantry, or do they pay for what they take?</li>
+<li>How are supplies handled during long campaigns?</li>
+<li>How many days worth of supplies can the army haul along with them?</li>
+<li>What are the accepted conventions for making war (examples: only fight in winter when nobody is busy with crops; don’t make war on civilians; only certain kinds of weapons are used)?</li>
+<li>Do the accepted conventions vary by race or region?</li>
+<li>How does the presence of non-humans affect strategy, tactics, and battles?</li>
+<li>Are special weapons required if an army is facing certain kinds of non-human armies?</li>
+<li>How would non-human soldiers turn their physical differences from humans to their advantage?</li>
+<li>Are particular non-human races traditionally better with certain weapons? If so, why?</li>
+<li>Are particular human groups traditionally better with certain weapons, and if so, why?</li>
+</ul>
+<p>The Land</p>
+<ol>
+<li>Physical &amp; Historical Features</li>
+</ol>
+<ul>
+<li>In which geographical areas will the game take place?</li>
+<li>How much ground will the game cover?</li>
+<li>What are the most striking features of landscape and climate?</li>
+<li>If there are non-human inhabitants, are there any areas or features they particularly claim as their own?</li>
+</ul>
+<ol start="3">
+<li>Climate &amp; Geography</li>
+</ol>
+<ul>
+<li>Have human (or non-human) activities affected climate or landscape in various regions?</li>
+<li>If so, how were the climate or landscape affected?</li>
+<li>How does the setting (multiple moons, suns, &amp;c.) affect the climate in various areas?</li>
+<li>How much land is in each of the equatorial, temperate, and polar zones?</li>
+<li>Where are the mountain ranges? The rivers and lakes? The deserts? The forests (tropical and otherwise)? The grasslands and plains?</li>
+<li>If there are mythological animals, how do they fit into the ecology?</li>
+<li>How did the mythological beasts come into being?</li>
+<li>What do the mythological creatures eat?</li>
+<li>How much and what kind of habitat do these mythological animals require?</li>
+<li>Are there intelligent mythological animals?</li>
+<li>How common are these mythological animals?</li>
+<li>Are there any endangered species of animals or plants?</li>
+<li>Is anyone concerned about endangered species?</li>
+<li>What geological formations can affect the weather or the climate?</li>
+<li>What are the natural wonders of the world, and where are they?</li>
+</ul>
+<ol>
+<li>Natural Resources</li>
+</ol>
+<ul>
+<li>Which areas are the most fertile farmlands?</li>
+<li>Where are mineral resources located?</li>
+<li>which animals, birds, fish, and other wildlife are commonly found in which areas?</li>
+<li>If there are fantastical animals, such as dragons, where do they live?</li>
+<li>Which natural resources, if any, have been depleted in which areas over time?</li>
+<li>Which resources are particularly abundant, and in which areas?</li>
+<li>Which resources are scarce and where are they scarce?</li>
+<li>Are there places with major deposits that haven’t been discovered yet, or where such deposits havenဩt been fully exploited?</li>
+<li>How much conflict has there been or might eventually be caused by these imbalances in resources?</li>
+<li>How much active, peaceful trade is attributed to these resources?</li>
+<li>What water resources are available, and for what uses?</li>
+</ul>
+<ol start="5">
+<li>Population</li>
+</ol>
+<ul>
+<li>How many people are there in the world?</li>
+<li>How many people are there in the various countries?</li>
+<li>What is considered a small town? A large town? A city?</li>
+<li>How diverse is the population?</li>
+<li>How many different races (human or non-human), creeds, cultures, and so on normally live in various cities and towns?</li>
+<li>In what percentages do these divisions occur?</li>
+<li>Is population shifting from rural to urban? From south to north? From mountains to coast?</li>
+<li>If populations are shifting, why are they doing so?</li>
+<li>What effects has migration had on the places being left behind?</li>
+<li>What effects has migration had on the places that are gaining population?</li>
+<li>Is there much immigration into or out of various countries? why or why not?</li>
+<li>Which geographical areas are most heavily populated?</li>
+<li>Which regions are the least populated? Why?</li>
+<li>Are certain regions or types of terrain more popular areas for non-humans, and, if so, why?</li>
+<li>How are roads built?</li>
+<li>What state are the roads in?</li>
+<li>Who pays for roads?</li>
+<li>Who maintains the roads?</li>
+</ul>
+<ol start="7">
+<li>Rural Factors</li>
+</ol>
+<ul>
+<li>Given the magical and technological level of this society, what is an appropriate ratio of farmers to urban residents?</li>
+<li>Given the state of the roads and of transportation, how much food is it possible to ship to a given location before it spoils?</li>
+<li>Are rural areas primarily farms, forests, fields for grazing, or wastelands?</li>
+<li>In outlying areas where there aren’t many people, how many roads are there?</li>
+<li>How reliable is the weather from year to year?</li>
+<li>Is crop production relatively dependable, or do people have to cope with regular famines due to drought or floods?</li>
+<li>What kinds of catastrophic weather events are common?</li>
+<li>Are there tornadoes, hurricanes, blizzards, waterspouts, dust storms, or sand storms?</li>
+<li>How do people cope with adverse weather and weather-caused disasters?</li>
+<li>How are farming areas divided between humans and non-humans?</li>
+<li>What kinds of conflicts are likely between humans and non-humans?</li>
+<li>Can common people own their own land, or does it all belong to a lord or other figure?</li>
+<li>What kinds of rights over land, crops, game, and resources do landowners have?</li>
+<li>How are country dwellers viewed by city folk?</li>
+<li>How do the country folk feel about city dwellers?</li>
+</ul>
+<ol start="9">
+<li>Urban Factors</li>
+</ol>
+<ul>
+<li>Does the layout of cities reflect some philosophy, such as that the “head” of the city must be at the center or the highest point?</li>
+<li>Were layout considerations mainly practical or did most cities just grow?</li>
+<li>Are there public or private parks in any cities?</li>
+<li>What kinds of activities take place in parks?</li>
+<li>Are cities generally laid out on a square-grid system of streets or are things more labyrinthine?</li>
+<li>How wide are the streets and alleys normally?</li>
+<li>What are the landmarks in each city?</li>
+<li>Where are the interesting neighbourhoods?</li>
+<li>What things give each area its special character?</li>
+<li>Where do people go to shop? Where do they go to eat?</li>
+<li>Is there an entertainment district? What kinds of entertainment are offered?</li>
+<li>Does the city have tourists? What do they come to do?</li>
+<li>Are certain cities known for certain activities or industries?</li>
+</ul>
+<p>Society &amp; Culture</p>
+<ol>
+<li>Arts, Entertainment, &amp; Recreation</li>
+</ol>
+<ul>
+<li>what is the status of the various arts in society?</li>
+<li>How are artists viewed?</li>
+<li>Are artists considered to be low or high class?</li>
+<li>Who supports the arts?</li>
+<li>Are there non-human races who tend to be naturally talented artists?</li>
+<li>How does this affect the human practitioners of those arts?</li>
+<li>Which arts are most highly valued and why?</li>
+<li>Are there permanent theatres or concert halls?</li>
+<li>Who owns and runs performance venues?</li>
+<li>Are there travelling troupes of performers?</li>
+<li>What do people at various levels of society do for fun?</li>
+<li>What sports or pastimes are common?</li>
+<li>Which pastimes require skill, money, or ample leisure time?</li>
+<li>What games are commonly known?</li>
+<li>What games are common among everyone, and which are limited to the peasantry or to the nobility?</li>
+<li>Are any games or pastimes illegal?</li>
+<li>Are certain countries or cities known for a passion or expertise for particular games or pastimes?</li>
+<li>Do non-human races have their own games and leisure pastimes?</li>
+<li>How do non-human hobbies and games differ from human games?</li>
+</ul>
+<ol>
+<li>Architecture</li>
+</ol>
+<ul>
+<li>What is the most common building material?</li>
+<li>Why is it used?</li>
+<li>Foes it have any major drawbacks?</li>
+<li>How are buildings normally ornamented?</li>
+<li>How tall a building can be constructed at a reasonable cost and in a reasonable time?</li>
+<li>What are the typical floor plans like?</li>
+<li>Can people afford to waste space on hallways or do they just have a series of rooms opening into other rooms?</li>
+<li>Are people’s businesses in their homes?</li>
+<li>Are buildings normally built square? Domed?</li>
+<li>How large is a typical house?</li>
+<li>How many people usually live in a typical house?</li>
+<li>What are the differences in materials and appearance between lower-class, middle-class, and upper-class housing?</li>
+<li>How do city houses differ from those in rural areas?</li>
+<li>How are living quarters arranged?</li>
+<li>Are parlours or libraries common?</li>
+<li>Are there special rooms for guests?</li>
+<li>Are parts of homes restricted to certain members of the household?</li>
+<li>How are houses heated and cooled?</li>
+</ul>
+<ol start="3">
+<li>Calendar</li>
+</ol>
+<ul>
+<li>Is there a single, generally accepted calendar or do different countries, peoples, or races have different methods of measuring time?</li>
+<li>How is the day divided into smaller time units?</li>
+<li>What are the divisions of time?</li>
+<li>Are the names of the time divisions relevant to anything?</li>
+<li>Is the length of an hour fixed, or does it vary depending on changes in the length of the day as the seasons change?</li>
+<li>What are the names of the months, and how many days are there in each?</li>
+<li>How many days in a week? Months in a year?</li>
+<li>Are there leap years?</li>
+<li>Who keeps track of the calendar?</li>
+<li>Who could make adjustments to the calendary, if necessary?</li>
+<li>Which days are holidays or festival times?</li>
+<li>What do the holidays and festivals celebrate?</li>
+<li>Are there holidays that are only celebrated in particular countries, cities, or regions?</li>
+<li>What events do people use to date years?</li>
+<li>Are these events single occurrences (the creation of the world, the end a war, the unification of the nation)?</li>
+<li>Are events dated based on arbitrary things such as a king’s reign, or a dynasty’s years in power)?</li>
+<li>How do people tell what time it is?</li>
+<li>Are there any days that are considered to be “outside the year”?</li>
+<li>How did these days originate?</li>
+</ul>
+<ol start="5">
+<li>Daily Life</li>
+</ol>
+<ul>
+<li>How do people feel about foreigners?</li>
+<li>How do people feel about non-humans?</li>
+<li>How ready are people to accept different ideas?</li>
+<li>How cosmopolitan is the average person?</li>
+<li>How much social mobility is there?</li>
+<li>What would it take for a person born in the lower class to advance to the middle class or beyond?</li>
+<li>How much resistance is there to social mobility?</li>
+<li>What things are considered luxuries?</li>
+<li>What do people in general look like?</li>
+<li>who would stand out in a crowd?</li>
+<li>What is furniture like?</li>
+<li>What is furniture commonly made of?</li>
+<li>Are certain things reserved for high-status individuals?</li>
+<li>In what ways does furniture design reflect the customs of people?</li>
+<li>What are plumbing and sanitary systems like?</li>
+<li>Who builds and maintains the sanitary systems and how reliable are they?</li>
+<li>Who do you call when the drains back up?</li>
+<li>How do people cope with various disasters — fire, flood, volcanic eruption, plague?</li>
+<li>How common are such disasters?</li>
+<li>How early do people get up in the morning in the city? In the country?</li>
+<li>What kinds of people are likely to face prejudice?</li>
+<li>Is this discrimination institutionalized or is it mostly a matter of public attitude?</li>
+</ul>
+<ol start="7">
+<li>Diet</li>
+</ol>
+<ul>
+<li>What foods are staples and commonly eaten every day?</li>
+<li>What foods are considered peasant food?</li>
+<li>What foods are rare?</li>
+<li>What foods are normally cooked and which are eaten raw?</li>
+<li>What is the food like?</li>
+<li>What dishes are considered to be holiday food?</li>
+<li>what foods and drinks are associated with particular holidays and events or times of the year?</li>
+<li>When a guest arrives, is food or drink offered immediately, after an interval, or only on request?</li>
+<li>Is there a particular food or drink that it is customary to offer a newly arrived guest?</li>
+<li>Is there a traditional food or drink given to a guest who is departing?</li>
+<li>How many meals are considered normal in a day?</li>
+<li>When are meals served?</li>
+<li>Which meals are substantial, and which are light?</li>
+<li>Are certain foods reserved mainly for a particular meal?</li>
+<li>What dishes would be considered typical of the various areas?</li>
+<li>What wines or beers are thought of as typical for various regions?</li>
+<li>Is there a safe supply of drinking water?</li>
+<li>Do people (including children) drink ale or beer exclusively?</li>
+<li>Which herbs and spices are readily available, and which must be imported?</li>
+<li>How common and expensive are imported foods and spices?</li>
+<li>Do people tend to like highly spiced food?</li>
+<li>How is food preserved for use during the off-season — smoking, freezing, canning, salting, pickling, drying?</li>
+<li>How reliable are the food preservation methods used?</li>
+<li>How often do preserved foods spoil?</li>
+<li>When food is limited in supply, who gets first dibs?</li>
+<li>What things are never eaten? Why?</li>
+<li>What foods do non-humans like, and how do these differ from those favoured by humans?</li>
+<li>Are some foods poisonous or distasteful to one species that are delicacies or necessary to another?</li>
+<li>Are any classes of society limited in what foods they may eat?</li>
+<li>Do special circumstances (such as pregnancy) ever restrict diet?</li>
+<li>Do religions have any beliefs about food and diet?</li>
+</ul>
+<ol>
+<li>Dining Customs</li>
+</ol>
+<ul>
+<li>Who dines together and who always dines separately?</li>
+<li>Do men and women, parents and children, servants and masters eat together?</li>
+<li>How is social status displayed at the table?</li>
+<li>Are special dining customs observed on certain holidays or for certain events?</li>
+<li>What distinguishes a formal or high-court dinner from an ordinary meal, besides quantity and variety of food?</li>
+<li>How do formal manners differ from everyday ones?</li>
+<li>What eating utensils are used, if any?</li>
+<li>Have utensils developed in the culture or been imported?</li>
+<li>What is the order of a typical upper-class meal?</li>
+<li>What shape are tables and eating areas?</li>
+<li>Where is the place of honour for a guest?</li>
+<li>Where do important members of the household sit?</li>
+<li>Are special arrangements necessary for entertaining guests of different races or species?</li>
+<li>How do the eating customs of different races reflect their cultures and biology?</li>
+</ul>
+<ol start="9">
+<li>Education</li>
+</ol>
+<ul>
+<li>How much does it cost to get various levels of education?</li>
+<li>What education is available, and where?</li>
+<li>Are there schoolhouses in every town, or do ordinary people have to travel if they want to be educated?</li>
+<li>Are there universities? Private tutors?</li>
+<li>What is the literacy level in the general population?</li>
+<li>Is literacy considered a useful or necessary skill for nobility, or something only scribes, clerks, or servants need?</li>
+<li>What areas are considered absolutely necessary knowledge for a courtier?</li>
+<li>Which areas of education are nice but not necessary?</li>
+<li>What areas of knowledge would be slightly embarrassing if anyone found out about them?</li>
+<li>How respected are teachers and scholars?</li>
+<li>Who supports educators?</li>
+<li>Are there anti-intellectual groups?</li>
+<li>Is education legally restricted in any way?</li>
+<li>Are there people for whom education is illegal?</li>
+</ul>
+<ol start="11">
+<li>Ethics &amp; Values</li>
+</ol>
+<ul>
+<li>what will people swear a binding oath by?</li>
+<li>What do people use as curse words?</li>
+<li>When and why are curse words used?</li>
+<li>What are the most desired and most valuable things in this society?</li>
+<li>Why is the most valued item so desired?</li>
+<li>Do different races value different things?</li>
+<li>Is there a race or culture for whom non-material things (information, time, spiritual enlightenment) are the valuable things?</li>
+<li>If a people values immaterial things, how did they get that way?</li>
+<li>What things are considered to be normal and acceptable in this society that might be considered abnormal or unacceptable by ours?</li>
+<li>What things are considered shocking in this society?</li>
+<li>What are the reactions of ordinary people when someone does one of these shocking things?</li>
+<li>What are the acceptable limits to honour or honesty in society?</li>
+<li>Is it possible to get out of a binding oath?</li>
+<li>Are white lies socially acceptable?</li>
+<li>What are the attitudes toward ownership?</li>
+<li>What constitutes theft, and what can be stolen with few repercussions?</li>
+<li>Are thieves organized in a guild, licensed by law, or freelance?</li>
+<li>Who is considered to be a citizen, with the rights and privileges thereof?</li>
+<li>What are the rights and privileges of citizens?</li>
+<li>What responsibilities do citizens bear?</li>
+<li>Can citizenship be revoked?</li>
+<li>Are there certain groups of people who have fewer legal rights or less recourse than full citizens?</li>
+<li>Why do those people have fewer rights than others?</li>
+<li>What are the most controversial subjects in this culture?</li>
+<li>What things can you easily start a friendly argument about in any bar?</li>
+<li>What things will automatically start an unfriendly argument?</li>
+<li>What are the social taboos?</li>
+<li>What things are simply “not done”?</li>
+<li>What things are never talked about?</li>
+<li>What would happen if someone did something socially unacceptable?</li>
+<li>How do social taboos vary for different races and groups of people?</li>
+<li>What are the biggest social faux pas?</li>
+<li>What are considered to be faux pas?</li>
+<li>What subjects or actions cause embarrassment or discomfort?</li>
+<li>What are the society’s mores regarding courtship, marriage, and family?</li>
+<li>Is marriage primarily a civil or a religious institution?</li>
+<li>Why are people usually married?</li>
+<li>What are the standards of beauty for people?</li>
+<li>What are the standards of beauty for paintings and sculpture?</li>
+<li>What are the standards of beauty for clothes and furniture?</li>
+<li>What kind of ideal life do people aspire to?</li>
+<li>What kinds of people are the rebels, outcasts, and misfits of this society?</li>
+<li>How does society deal with them?</li>
+<li>Who are the arbiters of ethics (as opposed to law)?</li>
+<li>How did they become the arbiters?</li>
+</ul>
+<ol start="13">
+<li>Fashion &amp; Dress</li>
+</ol>
+<ul>
+<li>What do people wear?</li>
+<li>How expensive is clothing?</li>
+<li>Can the material be produced locally, or must some or all of it be imported?</li>
+<li>Are certain clothes customary for certain occupations?</li>
+<li>How much variation is allowed?</li>
+<li>Is it quality or style which is most important?</li>
+<li>How frequently does style and fashion change?</li>
+<li>Who sets the trends?</li>
+<li>Are the dyes for certain colours rare, making cloth of that colour more expensive or reserved for high-status people?</li>
+<li>Are there sumptuary laws defining who may wear what?</li>
+<li>What are the penalties for dressing above or below one’s station?</li>
+<li>Who decides when changes are needed to such sumptuary laws?</li>
+<li>How often are sumptuary laws adjusted?</li>
+<li>How many changes of clothes can a normal person afford? A noble person?</li>
+<li>How often do people change their clothes?</li>
+<li>How often do people wash their clothes?</li>
+<li>What are the current fashions in clothes? In hats? Jewelry? Shoes?</li>
+<li>Do fashions differ for humans and non-humans?</li>
+<li>Do they differ from country to country or from ethnicity to ethnicity?</li>
+<li>What materials are appropriate for the climate?</li>
+<li>What cloth must be imported, and is therefore used only for expensive clothing?</li>
+<li>What styles are considered tacky and vulgar?</li>
+<li>What types of decorations and accessories are common?</li>
+<li>What colours and combinations of colours are thought to look good together, or to clash?</li>
+<li>Do opinions on colours vary from race to race?</li>
+<li>What physical features and characteristics are currently fashionable?</li>
+<li>How do trends in physical beauty vary for non-humans?</li>
+</ul>
+<ol start="15">
+<li>History</li>
+</ol>
+<ul>
+<li>How far back are there records or tales of historical events?</li>
+<li>How widely known are these stories?</li>
+<li>Do average people believe the old tales, or do they dismiss some that have a basis in fact?</li>
+<li>How long have there been people on this world?</li>
+<li>Did they evolve, were they created by the gods, or did they migrate from somewhere else?</li>
+<li>If there are non-humans, how long have they been around and where did they come from?</li>
+<li>Where did the civilizations begin?</li>
+<li>What directions did they spread?</li>
+<li>How was development affected by the presence of working magic?</li>
+<li>How was development affected by the existence of non-human races?</li>
+<li>How have the actions of gods affected civilization’s development?</li>
+<li>Which peoples, countries, ethnicities, and races have fought, been allies, traded, or traditionally been rivals?</li>
+<li>Where are such old events still important or still causing hard feelings?</li>
+<li>Which peoples, countries, ethnicities, and races have been in conflict or have allied in the recent past and why?</li>
+<li>Which people are considered the most and least civilized?</li>
+<li>Which people are the most and least technologically advanced?</li>
+<li>Which people are the most and least magically advanced?</li>
+</ul>
+<ol start="17">
+<li>Language</li>
+</ol>
+<ul>
+<li>Is there a trade language that facilitates commerce between countries that don’t speak the same tongue?</li>
+<li>Is there a universal language spoken by educated or noble persons?</li>
+<li>Is there a liturgical tongue?</li>
+<li>What language are religious documents kept in?</li>
+<li>Are some or all people bilingual?</li>
+<li>Is there a common second language many people know?</li>
+<li>Are there secret languages or codes known only by priests, soldiers, guild members?</li>
+<li>If there are secret languages, why were they developed?</li>
+<li>Are secret languages fully functional (they can express anything one could normally express in language) or are they limited to a certain scope?</li>
+<li>What are the variations in speech patterns, syntax, and slang from one social class to another?</li>
+<li>Are there variations in speech patterns from one occupation to another?</li>
+<li>Are there regional variations in speech?</li>
+<li>From what areas do local slang phrases come?</li>
+<li>What kinds of colourful turns of phrase do people use?</li>
+<li>For what things would a local language have many specific words to indicate fine differences?</li>
+<li>What do the people in this culture consider important enough to name?</li>
+<li>What do people use as curse words?</li>
+<li>How many languages are there?</li>
+<li>Which languages are related and why?</li>
+<li>Which languages borrow words or phrases from other languages?</li>
+<li>Which languages are the most widely spoken?</li>
+<li>Are there different languages for different races?</li>
+<li>Is there a special language needed in order to talk with dragons or other beasts?</li>
+<li>Do wizards have a special language that is used for magic?</li>
+<li>If magic is its own language, where do practitioners learn it?</li>
+<li>Is it safe to chat in the language of magic?</li>
+<li>How close do people stand to one another when speaking?</li>
+<li>Does personal space differ from place to place?</li>
+<li>How do people with different ideas of personal space react to one another?</li>
+</ul>
+<ol>
+<li>Gestures</li>
+</ol>
+<ul>
+<li>Are gestures and body language in this society generally subtle?</li>
+<li>Do people talk with their hands, or is that considered vulgar?</li>
+<li>What gestures are insulting?</li>
+<li>What do the insulting gestures mean?</li>
+<li>Do some gestures differ in meaning depending on the culture or time?</li>
+<li>How do overall gestures and body language differ between countries?</li>
+<li>Are there things that don’t matter in one area that are mortal insults in another?</li>
+<li>What are the different ways of showing respect to another?</li>
+<li>To whom is one expected to show respect?</li>
+</ul>
+<ol start="19">
+<li>Manners</li>
+</ol>
+<ul>
+<li>What are the rules of precedence?</li>
+<li>Who gets to go through doors first? Who gets introduced first in a social setting?</li>
+<li>Do these rules differ in a formal setting?</li>
+<li>Is there a distinction between formal good manners and informal, everyday manners?</li>
+<li>When and where are people expected to be on their best behaviour?</li>
+<li>How important are good manners in this society?</li>
+<li>How do good manners differ from race to race?</li>
+<li>How to people react when someone has just been, by their standards, rude?</li>
+<li>Are people shocked when an outsider learns their manners? Are they patronizing, condescending, or supportive?</li>
+</ul>
+<ol start="21">
+<li>Meeting &amp; Greeting</li>
+</ol>
+<ul>
+<li>How do people greet one another and how did this greeting originate?</li>
+<li>Is there a special i-am-not-armed gesture for wizards or others with dangerous abilities?</li>
+<li>Is there a difference between the greeting offered to an equal and that offered to a superior or inferior?</li>
+<li>Are there different greetings offered to men or women? Humans and a non-human?</li>
+<li>Is there a way of changing a greeting gesture to make it insulting?</li>
+<li>When meeting someone for the first time, how are they greeted?</li>
+<li>Does this greeting differ if one already knows the person?</li>
+<li>If you see someone you know on the far side of the street, how do you acknowledge them?</li>
+<li>How are two people who have not met before introduced to one another?</li>
+<li>What is the order of precedence when there are several people of differing sex, social status, or race present who must all be introduced to one another?</li>
+<li>Are there people or beings who are never introduced to one another?</li>
+<li>Are true names significant, and if so, under what circumstances would a person be told another’s true name?</li>
+<li>Are there customs involving the way in which someone is named when being introduced</li>
+</ul>
+<ol start="23">
+<li>Religion &amp; Philosophy</li>
+</ol>
+<ul>
+<li>Are there actual gods or god-like beings?</li>
+<li>If so, do they take an active role in the religions that worship them?</li>
+<li>Do they take an active role in the lives of everyday people? If so, why?</li>
+<li>How many gods are there, and is there a hierarchy among them?</li>
+<li>Which gods are good or evil, or is this meaningless when speaking of gods?</li>
+<li>How do various religions view non-believers?</li>
+<li>How do the various religions view foreigners? Non-humans?</li>
+<li>Which religions support the government, and which are more interested in ordinary people?</li>
+<li>Is there a difference between miracles and magic?</li>
+<li>If there is a difference, how are they distinguished?</li>
+<li>Is there tension, rivalry, or outright hostility between any of the gods?</li>
+<li>How do the relationships between the gods affect church politics?</li>
+<li>Do the relationships between the gods affect people’s everyday lives?</li>
+<li>Where does religion fit into this society?</li>
+<li>Is there a state church?</li>
+<li>Is freedom of religion normal?</li>
+<li>Do people generally think of the temples and churches as parasites, or as useful parts of society?</li>
+<li>If there are actual, demonstrable gods, what part does faith play in their worship?</li>
+<li>Why do the gods wnat want worship?</li>
+<li>What are the various religious rites like, and why?</li>
+<li>What offerings are considered good?</li>
+<li>Are people supposed to pick one or more gods to worship and ignore the others, or do most people pray to whomever is most likely to grant results in their situation?</li>
+<li>How do people decide which god to worship or which temple to be affiliated with?</li>
+<li>What part do the various religions and philosophies play in public and private life?</li>
+<li>Are philosophers and theologians considered academics?</li>
+<li>How much influence do the theories of philosophers and theologians have on the way people actually behave?</li>
+<li>Are priests or philosophers full-time occupations, or do they need day jobs?</li>
+<li>If they are full-time, who supports them?</li>
+<li>Why are the gods interested in people?</li>
+<li>Are they more human-like or are they transcendent and incomprehensible?</li>
+<li>Do the gods have limits to what they can do?</li>
+<li>Are there limits to what the gods will do?</li>
+<li>Can the gods make mistakes?</li>
+<li>How do the various temples and philosophies explain the classic problem of evil?</li>
+</ul>
+<ol start="25">
+<li>Social Organization</li>
+</ol>
+<ul>
+<li>What are the easiest and most common ways to advance in status?</li>
+<li>Can one attain higher status by amassing more money, marrying well, getting the ruler’s favour?</li>
+<li>How much resistance is there to someone advancing in social status?</li>
+<li>What are the various ranks and titles and proper forms of address for the aristocracy and nobility?</li>
+<li>What is the proper means to addressing peers, social betters, or social inferiors?</li>
+<li>Which occupations are the most respected? Why?</li>
+<li>Which professions are the most looked down upon? Why?</li>
+<li>How many levels are there in this society?</li>
+<li>How firm are the divisions between the levels of society?</li>
+<li>Is it possible to move between the levels of society?</li>
+<li>How difficult is it to rise or fall from one social level to another?</li>
+<li>How much social mobility is there?</li>
+<li>How much social mobility do people think there is?</li>
+</ul>
+<ol start="27">
+<li>Specific Countries</li>
+</ol>
+<ul>
+<li>What is the basic form of government in this country?</li>
+<li>What forms of government are used in neighbouring countries, and why are they the same or different?</li>
+<li>Who are the rivals or enemies of this country?</li>
+<li>How close are they physically, and how powerful are they?</li>
+<li>Who are the heroes and villains of each country’s history?</li>
+<li>Why are these people heroes, and what does this say about the country and people?</li>
+<li>How accessible is this area?</li>
+<li>What natural features mark the country’s borders?</li>
+<li>Who are the neighbouring countries and people and what are they like?</li>
+<li>Why did people settle in this area in the first place?</li>
+<li>Is the country in a strategic location, on a trade route, in a good place for a harbour, rich in minerals, good for farming?</li>
+<li>Have things changed much since people entered the area, or do people still depend on whatever brought them there in the first place?</li>
+<li>How do the weapons of this country compare with those of surrounding nations?</li>
+<li>Have there been recent innovations that may upset the balance of power?</li>
+<li>How diverse is the population of this country?</li>
+<li>Are people immigrating to or emigrating from the country? Why?</li>
+<li>Is magic legal there?</li>
+<li>Do laws governing magic vary widely from city to city, or are attitudes generally similar?</li>
+<li>What does this country import? Export?</li>
+<li>How important is trade to the economy?</li>
+<li>How is currency exchange handled, and by whom?</li>
+<li>What is monetary system used, if any, and who mints it?</li>
+<li>How much of this country is farmland? Forest? Desert? Mountains? Plains? Swamp?</li>
+<li>How much of this country is arable?</li>
+<li>What are the primary crops?</li>
+<li>which crops are any grown mainly for export or for trade?</li>
+<li>What crops can not be grown here because of the soil or climate?</li>
+<li>What water resources are available here, and for what uses?</li>
+<li>What wild animals live in this area? Are any of them potentially useful or dangerous to the population?</li>
+<li>Which animals are commonly domesticated in this area?</li>
+</ul>
+<ol start="29">
+<li>Visits</li>
+</ol>
+<ul>
+<li>Are there questions that must be asked or avoided when visiting someone?</li>
+<li>Are there topics that can only be raised by the host? By the guest?</li>
+<li>How seriously does the culture take the responsibilities of host and guest?</li>
+<li>What rules define when someone becomes a host or guest?</li>
+<li>What things are considered courteous to offer a guest: food, reading material, personal guards, attendants, music, entertainment?</li>
+<li>What is considered a courteous response to a host’s offer?</li>
+<li>Are there things offered that it is considered rude to accept? Rude to refuse? Rude to ask for?</li>
+<li>When a guest arrives, is food or drink offered immediately, after an interval, or only on request?</li>
+<li>How do the different customs of various countries and races interact and conflict?</li>
+</ul>
+<p>Magic &amp; Science</p>
+<ol>
+<li>Magic &amp; Magicians</li>
+</ol>
+<ul>
+<li>How do various religions view magic?</li>
+<li>Do any religions forbid magic or require it? And if so, what’s their reasoning?</li>
+<li>Do any require or forbid priests to practise magic?</li>
+<li>How has the presence of magic and magicians affected law and government?</li>
+<li>Are wizards barred from certain kinds of government posts</li>
+<li>Do some positions require that their holder be a wizard?</li>
+<li>Are the laws of nature and physics actually different in this world or are they the same as in real life?</li>
+<li>If the laws of nature and physics are the same, then how does magic fit in?</li>
+<li>Which peoples, races, cultures, countries, or ethnicities are most magically advanced?</li>
+<li>Is magic legal?</li>
+<li>Is all magic legal, or only some types?</li>
+<li>Do laws about magic vary widely from country to country, or is the attitude generally similar?</li>
+<li>Are there magical artifacts?</li>
+<li>If so, who made them and how?</li>
+<li>Are magical effects permanent, or does the magic wear off after a while?</li>
+<li>What effect has magic had on law? On art? On technology? On entertainment?</li>
+<li>Where is magical research done?</li>
+<li>Are magicians a force in politics?</li>
+<li>Are there national politics that revolve around magic or wizards?</li>
+<li>How much as the presence of magic affected military strategy and tactics in general?</li>
+<li>Is healing usually a magical process?</li>
+<li>If so, how does the magical healing talent or spell work?</li>
+<li>Does a magical healer have to consciously direct the healing process, or does magical healing simply speed up the normal healing process in the patient?</li>
+<li>Is there more than one kind of magical healer and if so are they rivals or simply different specialities?</li>
+<li>Is forensic magic possible?</li>
+<li>Can forensic magic be used to investigate only certain types of crimes (and if so, which)?</li>
+<li>Are the results of forensic spells admissible in court as evidence?</li>
+<li>Can magic be used in the arts, and if so, how?</li>
+<li>How do “normal” artists feel about artists who use magic?</li>
+<li>How do magicians feel about non-magical people?</li>
+<li>Is there a specific name for those who cannot do magic?</li>
+<li>Are spells fast enough to be useful in hand-to-hand combat, or is magic useful only for long, slow things?</li>
+</ul>
+<ol>
+<li>Magic &amp; Technology</li>
+</ol>
+<ul>
+<li>Are there magical means of transportation?</li>
+<li>How does magical transportation compare in speed, safety, and expense to non-magical means?</li>
+<li>Are magical weapons available?</li>
+<li>Can magic be used in warfare? In what ways?</li>
+<li>How has the presence of magic affected weapons technology?</li>
+<li>Do you have to do anything special to armour, weapons, walls, &amp;c. to make them better able to resist spells?</li>
+<li>Can ordinary objects be enchanted to make them extremely lethal or will this work properly only on things that are already weapons?</li>
+<li>Can ordinary objects be enchanted to make them (or their user) much, much better at whatever they do?</li>
+<li>How common and useful are such enchanted objects?</li>
+<li>To what degree do magical objects and the presence of wizards and spells replace or duplicate technology?</li>
+</ul>
+<ol start="3">
+<li>Rules of Magic</li>
+</ol>
+<ul>
+<li>What things can magic not do?</li>
+<li>what are the limits of magical power?</li>
+<li>Where does magic power come from? What is its source?</li>
+<li>Is magic an exhaustible resource?</li>
+<li>What does one need to do to cast a spell?</li>
+<li>How long does it take to cast a spell?</li>
+<li>Can spells be stored for later, instant use?</li>
+<li>Do spells take lots of long ritual, or is magic a point-and-shoot kind of thing?</li>
+<li>Can two or more wizards combine their power to cast a stronger spell?</li>
+<li>What makes one wizard more powerful than another?</li>
+<li>Does practising magic have any detrimental effect on the magician?</li>
+<li>If the effects can be detrimental, is there any way to prevent these them?</li>
+<li>Are detrimental effects inevitable in all magicians, or do they affect only those with some sort of predisposition?</li>
+<li>Do the effects progress at the same rate in everyone?</li>
+<li>How much is actually known in the world about the laws of magic?</li>
+<li>How much of that which is “knownÉD; is actually incorrect?</li>
+<li>What general varieties of magic are practised?</li>
+<li>Do any varieties of magic work better than others?</li>
+</ul>
+<ol start="5">
+<li>Wizards</li>
+</ol>
+<ul>
+<li>Is there a numerical limit to the number of wizards in the world? Why?</li>
+<li>Are different races good at different kinds of magic?</li>
+<li>Is a magician’s lifetime normally longer or shorter than average? Why?</li>
+<li>How are illegal magicians apprehended and punished?</li>
+<li>Is the apprehension of illegal practitioners the responsibility of the magician’s guild, or do ordinary law enforcement agencies have to deal with it?</li>
+<li>How does a magician tap magical power?</li>
+<li>Does becoming a magician require some rite of passage or does it just happen naturally?</li>
+<li>Is magic a result of study or just part of growing up?</li>
+<li>Are there things (such as magical staves, wands, familiars, and crystal balls) that are necessary or useful to have before casting spells?</li>
+<li>Where and how do wizards get these things?</li>
+<li>Are certain kinds of magic practised solely or chiefly by one sex or another? By one race or culture or another?</li>
+<li>Does a magician’s magical ability or power change over time?</li>
+<li>Can a magician use up all of their magic, thus ceasing to be a magician?</li>
+<li>What do an ex-magicians do with themselves?</li>
+<li>Can the ability to do magic be lost? How?</li>
+<li>Can the ability to do magic be forcibly taken away? How and by whom?</li>
+<li>What is the price magicians pay in order to be magicians?</li>
+<li>Is magic a profession, an art, or just a job?</li>
+<li>What is the status accorded to magicians in society?</li>
+</ul>
+<ol start="3">
+<li>Medicine</li>
+</ol>
+<ul>
+<li>At what level is medicine?</li>
+<li>Who are the healers?</li>
+<li>Do you have to have a talent to heal?</li>
+<li>Who trains healers, herbalists, apothecaries, surgeons, magical and non-magical?</li>
+<li>What customs surround death and burial?</li>
+<li>Is there a special class of people (doctors, priests, funeral directors, untouchables) who deal with dead bodies?</li>
+<li>How accurate is the diagnostic process?</li>
+<li>Do healers have ways of telling two diseases apart if they have similar symptoms?</li>
+<li>Do healers depend on standard physical medical tests (reflexes, temperature, dilated pupils) or do they normally use spells for diagnosis?</li>
+<li>How expensive are healers?</li>
+<li>How available are such services to ordinary people?</li>
+<li>How much is known about anatomy, physiology, pathology, psychology, and so on?</li>
+<li>Are treatments based on purely practical experience, or do healers understand at least some of what they are doing?</li>
+<li>Are there stories (true or false) about why certain remedies work or fail?</li>
+<li>How much training does a healer normally get?</li>
+<li>Is healing generally a magical process?</li>
+<li>Is there a reliable method of birth control?</li>
+<li>Who normally handles births?</li>
+<li>What is the maternal mortality rate> The infant mortality rate?</li>
+<li>Who can become a healer?</li>
+<li>Are there various kinds of healers (herbalists, wise-women, pharmacists, apothecaries, surgeons, doctors, nurses, witchdoctors)?</li>
+<li>If there are different kinds of healers, why are the distinctions made?</li>
+<li>What kinds of treatments are available and how effective are they?</li>
+<li>Is it possible to resurrect or resuscitate someone who has died?</li>
+<li>If revival is possible, how long is it before it becomes impossible, or before serious brain damage sets in?</li>
+<li>How is insanity treated?</li>
+<li>Are there asylums or treatment centres?</li>
+<li>How effective are treatments for insanity?</li>
+<li>How much do the physical differences between human and non-human races affect their medical treatment?</li>
+<li>Are there some diseases that only affect non-humans, or only humans?</li>
+<li>Are some treatments lethal to one species but effective in another?</li>
+<li>Do physicians have to specialize in non-human medicine in order to do a good job of it?</li>
+</ul>
+<ol start="5">
+<li>Science &amp; Technology</li>
+</ol>
+<ul>
+<li>Is the level of technology in this society comparable to that of ancient Rome, the Middle Ages, the Renaissance, the Industrial Revolution?</li>
+<li>What important inventions or advances have been made (the wheel, stirrups, gunpowder, printing, flush toilets)?</li>
+<li>Have any of them been produced in quantities sufficient to affect the daily lives of the average person, or are they a luxury for nobles only?</li>
+<li>What inventions or advances have not been made that one would expect to see at this stage of technological development? Why haven’t they eventuated?</li>
+<li>what advancers are about to be made?</li>
+<li>How much is known about the laws of nature, physics, and magic?</li>
+<li>How much of what is commonly known is factually wrong?</li>
+<li>Where is scientific research done? Universities, private labs, under the auspices of the government?</li>
+<li>In what areas might magic replace technology, and thus suppress its development?</li>
+<li>In what areas might magic cause more rapid technological or scientific development?</li>
+<li>How do the technology levels and scientific knowledge of non-human races compare to those of humans?</li>
+</ul>
+<ol start="7">
+<li>Transportation &amp; Communication</li>
+</ol>
+<ul>
+<li>What are the common domesticated animals used for transportation at various levels of society?</li>
+<li>Are there magical means of transportation?</li>
+<li>For travelling short distances within a city, what are the alternatives?</li>
+<li>How are messages sent when necessary?</li>
+<li>Is there a public or private postal system, or does everyone of importance have to send messengers?</li>
+<li>How fast can news get from one point to another?</li>
+<li>Are there magical means of communication? How common and reliable are they? How expensive?</li>
+<li>How available is water transportation?</li>
+<li>How common is travel (for any reason)?</li>
+<li>Does the concept of travelling just “to see the world” or for fun even exist?</li>
+<li>How dangerous is travel?</li>
+<li>How large a group is considered safe for travelling?</li>
+<li>How much traffic is there inside and outside the main cities?</li>
+<li>Which areas are the best and worst for travel?</li>
+<li>What is the fastest means of travelling long distances over land? Over water?</li>
+<li>What are the safest means of travel?</li>
+<li>What is transportation like?</li>
+<li>Are there good roads? Who builds them?</li>
+<li>Are there tolls?</li>
+<li>Are roads guarded or patrolled?</li>
+<li>Where would a traveller stay at night?</li>
+<li>Are there enough travellers to support inns, or do people have to stay at monasteries or others’ homes?</li>
+<li>Are some classes of people (slaves, peasants) who are not expected to travel at all?</li>
+<li>Are some (heralds, messengers) expected to travel constantly?</li>
+<li>How do people find out what is happening in the world?</li>
+<li>How slanted is the news they get this way, and in what direction?</li>
+<li>Is there freedom of the press? If not, who controls or censors it, by what means, and for what purpose?</li>
+<li>How are books produced?</li>
+<li>Are books common or are they valuable hand-written objects?</li>
+<li>Where are the great libraries and collections?</li>
+<li>Are the great libraries open to scholars, wizards, and/or the general public?</li>
+<li>Who supports the libraries?</li>
+</ul>
+<p>From &lt;<a href="http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html" class="external">http://arcadia.net/Cruinne/DnD/Articles/worldbuilding.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../postscript.js" type="module"></script></html>

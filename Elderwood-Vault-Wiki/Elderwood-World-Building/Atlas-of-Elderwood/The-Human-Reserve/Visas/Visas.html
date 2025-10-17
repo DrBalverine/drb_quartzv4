@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Visas</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="Visas"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Visas"/><meta name="twitter:description" content="MAP Points of Interest Ordered by District District 1: The Moonlight District A lively district with a festive atmosphere, known for its thriving nightlife and artistic expression."/><meta property="og:description" content="MAP Points of Interest Ordered by District District 1: The Moonlight District A lively district with a festive atmosphere, known for its thriving nightlife and artistic expression."/><meta property="og:image:alt" content="MAP Points of Interest Ordered by District District 1: The Moonlight District A lively district with a festive atmosphere, known for its thriving nightlife and artistic expression."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas"/><link rel="icon" href="../../../../../static/icon.png"/><meta name="description" content="MAP Points of Interest Ordered by District District 1: The Moonlight District A lively district with a festive atmosphere, known for its thriving nightlife and artistic expression."/><meta name="generator" content="Quartz"/><link href="../../../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvZHJiX3F1YXJ0enY0L2RyYl9xdWFydHp2NC9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcGFkZGluZzogMnJlbTtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../../../..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-214"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-214" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/">Elderwood Vault Wiki</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/">Elderwood World Building</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/">Atlas of Elderwood</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/">The Human Reserve</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/">Visas</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Visas</a></div></nav><h1 class="article-title">Visas</h1><p show-comma="true" class="content-meta"><time datetime="2025-10-17T12:29:17.000Z">Oct 17, 2025</time><span>12 min read</span></p><ul class="tags"><li><a href="../../../../../tags/Location" class="internal tag-link">Location</a></li><li><a href="../../../../../tags/Reserve" class="internal tag-link">Reserve</a></li></ul></div></div><article class="popover-hint"><h1 id="map">MAP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#map" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../../../../Elderwood-Vault-Wiki/Maps/Area-Maps/Visas-Map-001.png" width="auto" height="auto" alt/></p>
+<h1 id="points-of-interest-ordered-by-district">Points of Interest Ordered by District<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#points-of-interest-ordered-by-district" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="district-1-the-moonlight-district"><strong>District 1: The Moonlight District</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-1-the-moonlight-district" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A lively district with a festive atmosphere, known for its thriving nightlife and artistic expression.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Midnight Plaza - A bustling square with performers and midnight markets. <strong>Notable NPC:</strong> Sirath Emberwind, human bard, charismatic but secretive, collects rare instruments.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Silver Lyre - An upscale tavern featuring nightly music competitions. <strong>Notable NPC:</strong> Melindra Voss, elven musician, aloof and talented, rumored to have a magical harp.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Twilight Sepulcher - A church with stained glass that glows in moonlight. <strong>Notable NPC:</strong> Deacon Tondir, human cleric, devout but melancholy, once a wandering priest. Fervently beleives Saint Derisor as he has seen corruption of demons first hand.</p>
+</li>
+</ul>
+<h2 id="district-2-the-warrens"><strong>District 2: The Warrens</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-2-the-warrens" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A labyrinthine, impoverished district dominated by criminal activity and hidden secrets. Home to <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Flind-Street-Mafia" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Flind-Street-Mafia">The Flind Street Mafia</a></p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Singing Cistern - A hidden underground gathering place for the mafia. <strong>Notable NPC:</strong> Marlowe “Redfang”, half-orc enforcer, fiercely loyal, scarred from a past betrayal.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Cracked Coin - A dilapidated inn frequented by smugglers. <strong>Notable NPC:</strong> Kara Flint, dwarf barkeep, shrewd and resourceful, knows everyone’s secrets.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Cobweb Alley - A maze of narrow streets, infamous for ambushes. <strong>Notable NPC:</strong> Jettix, aasimar thief, playful yet dangerous, leaves calling cards after a heist.</p>
+</li>
+</ul>
+<h2 id="district-3-high-perch-estates"><strong>District 3: High Perch Estates</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-3-high-perch-estates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>An affluent district perched on a hill, home to wealthy nobles and luxurious manors.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Skyglass Manor - A towering estate with glass walls overlooking the city. <strong>Notable NPC:</strong> Lady Isolde Fairfax, human noble, aloof but politically shrewd, collector of rare birds.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Gilded Falcon Aviary - Houses exotic birds from across the realms. <strong>Notable NPC:</strong> Count Cedric Moor, human caretaker, gentle and enthusiastic, speaks to birds fluently.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Verdant Promenade - A luxurious garden path lined with rare plants. <strong>Notable NPC:</strong> Lady Halten Iris, elven botanist, enigmatic and scholarly, cultivates magical flora.</p>
+</li>
+</ul>
+<h2 id="district-4-crowfoot-terrace"><strong>District 4: Crowfoot Terrace</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-4-crowfoot-terrace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>An artistic hub filled with eccentric residents and colorful architecture.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Painted Spire - A multicolored tower that houses eccentric artists. <strong>Notable NPC:</strong> Brinley Morcott, human sculptor, jovial but erratic, creates lifelike statues.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Dancer’s Respite - A cozy inn popular with performers. <strong>Notable NPC:</strong> Selise Thorn, half-elf dancer, warm and approachable, occasionally organises noble court performances.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Scarlet Quill - A shop selling rare books and inks. <strong>Notable NPC:</strong> Magister Thalric Varn, human scholar, grumpy but brilliant, researches forgotten languages.</p>
+</li>
+</ul>
+<h2 id="district-5-the-mist"><strong>District 5: The Mist</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-5-the-mist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>An eerie, abandoned district shrouded in supernatural fog and ghostly activity.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Eidolon Gate - The main entrance to the haunted district, guarded day and night. <strong>Notable NPC:</strong> Captain Rhea Castell, human guard captain, stern but compassionate, lost her brother to the Mist.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Hollow Bell - A shattered church bell that rings during ghostly activity. <strong>Notable NPC:</strong> Asphira, ghostly figure, haunting and sorrowful, whispers warnings to intruders.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Specter’s Crossing - A bridge within the Mist where apparitions appear nightly. <strong>Notable NPC:</strong> Edran Wraithbane, human exorcist, grim and relentless, wields a blessed lantern.</p>
+</li>
+</ul>
+<h2 id="district-6-the-manaflood"><strong>District 6: The Manaflood</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-6-the-manaflood" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A desolate area scarred by magical experiments, pulsing with residual arcane energy.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Arcane Sinkhole - A glowing crater radiating unpredictable magic. <strong>Notable NPC:</strong> Mira Kelth, human mage, eccentric and daring, studies the crater’s energy.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Shimmering Wastes - A barren stretch of land where mana storms erupt. <strong>Notable NPC:</strong> Orwin Duskshade, tiefling scholar, calm but secretive, has an artifact to control the storms.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Broken Tower - A leaning ruin crackling with residual spells. <strong>Notable NPC:</strong> Kaelis Vorn, elf arcanist, bitter and reclusive, lost an arm to a failed experiment.</p>
+</li>
+</ul>
+<h2 id="district-7-shardspire-ward"><strong>District 7: Shardspire Ward</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-7-shardspire-ward" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A bustling district centered on magical studies and psionic research.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Crystal Nexus - The central hub of magical research in the city. <strong>Notable NPC:</strong> Magister Zoryn Vale, human wizard, ambitious and calculating, rumoured to seek immortality.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Glimmer Market - A vibrant market selling enchanted trinkets. <strong>Notable NPC:</strong> Fenwick Brightspark, Brass Elf merchant, cheerful but sly, always has a “special deal.”</p>
+</li>
+<li>
+<p><strong>POI:</strong> Dragon’s Shard Library - A grand library housing psionic research. A notable codex remmenant of <a href="../../../../../the-Psychic-Wars" class="internal alias" data-slug="the-Psychic-Wars">the Psychic Wars</a> <strong>Notable NPC:</strong> Lyssandra Tellyn, elven librarian, stoic but kind, guards forbidden tomes.</p>
+</li>
+<li>
+<p><strong>POI:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Cornelius-Moonwing" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Cornelius-Moonwing">Cornelius Moonwing</a>’s Antiquities  - Moonwing’s rare relic shop, purveyor of the magic and unique. <strong>Notable NPC:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Cornelius-Moonwing" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Cornelius-Moonwing">Cornelius Moonwing</a> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/The-Party/Akki/Akki" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/The-Party/Akki/Akki">Acti</a></p>
+</li>
+</ul>
+<h2 id="district-8-coronet-parade"><strong>District 8: Coronet Parade</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-8-coronet-parade" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A district of grandeur, home to jousting arenas and ceremonial displays of noble power.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Jousting Grounds - A large arena for tournaments and noble sports. <strong>Notable NPC:</strong> Sir Garrick Hollis, human knight, brave but vain, a local jousting champion.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Feathered Helm - A renowned armory producing ceremonial gear. <strong>Notable NPC:</strong> Daria Forgewright, dwarf blacksmith, gruff but talented, specializes in ornate designs.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Cavalier’s Rest - A popular tavern for soldiers and knights. <strong>Notable NPC:</strong> Tobias Renfield, human barkeep, jovial and sharp-witted, a retired soldier.</p>
+</li>
+</ul>
+<h2 id="district-9-lantern-veil-wharf"><strong>District 9: Lantern Veil Wharf</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-9-lantern-veil-wharf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A vibrant dockland illuminated by strings of lanterns, bustling with trade and industry.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Harborlight Beacon - A lighthouse adorned with glowing runes. <strong>Notable NPC:</strong> Ivy Seastone, human keeper, curious and friendly, loves sharing maritime tales.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Night Net - A fish market operating after dark. <strong>Notable NPC:</strong> Brask Ironjaw, half-orc trader, gruff but fair, known for his booming laugh.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Sheermask Teahouse - A tea house of ill repute, lit by enchanted lanterns. <strong>Notable NPC:</strong> Loralei Mistvale, human proprietor, mysterious and elegant, rumored to read fortunes.</p>
+</li>
+</ul>
+<h2 id="district-10-duskridge-crossing"><strong>District 10: Duskridge Crossing</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-10-duskridge-crossing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A rural outskirt of Visas, marking the western gateway to the city.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Rusted Gate - The city’s ancient western entrance. <strong>Notable NPC:</strong> Old Bran, human gatekeeper, cantankerous but reliable, remembers every visitor.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Moat’s Edge - A small village by the riverbank. <strong>Notable NPC:</strong> Greta Wainwright, human fisher, hardworking and motherly, has a knack for calming storms.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Duskridge Stables - Known for breeding their fast hardy horses and their courier business <strong>Notable NPC:</strong> Elric Barkhide, half-elf stablemaster, diligent, strong and soft-spoken, a former scout.</p>
+</li>
+</ul>
+<h2 id="district-11-arx-regnatrix"><strong>District 11: Arx Regnatrix</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-11-arx-regnatrix" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The seat of power in Visas, dominated by imposing government buildings and noble residences.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> <a href="../../../../../Lady-Visas" class="internal alias" data-slug="Lady-Visas">Lady Visas</a> Keep - The ruler’s imposing fortress. <strong>Notable NPC:</strong> <a href="../../../../../Lady-Visas" class="internal alias" data-slug="Lady-Visas">Lady Visas</a>, enigmatic human noble, wise yet distant, shrouded in mystery.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Obsidian Court - A grand hall for political gatherings. <strong>Notable NPC:</strong> Count Auren Malcis, human diplomat, charming but manipulative, wields great influence.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Royal Conservatory - A lavish garden housing rare flora. <strong>Notable NPC:</strong> Sylvania Thorngrip, elf horticulturist, subtle and driven, cultivates alchemical plants. Elven Sovreignty Ambassador</p>
+</li>
+</ul>
+<h2 id="district-12-the-fangs"><strong>District 12: The Fangs</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-12-the-fangs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Docklands named after the two large towers that dominate it, remnants from larger fortifications long gone now.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Twinfang Tower - One of the massive towers dominating the docks. <strong>Notable NPC:</strong> Captain Orrek Stonefist, dwarf sailor, gruff and battle-hardened, commands the dock guards.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Fang’s Bite Tavern - A rowdy bar frequented by dockworkers. <strong>Notable NPC:</strong> Brynna Wavestrider, half-elf barkeep, sharp-tongued and fearless, former pirate.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Chainline Market - A marketplace for maritime goods. <strong>Notable NPC:</strong> Kelvin Trask, human merchant, opportunistic and cunning, trades in exotic wares.</p>
+</li>
+</ul>
+<h2 id="district-13-sableston-cross"><strong>District 13: Sableston Cross</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-13-sableston-cross" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Hub for the city’s working-class artisans and craftsmen, their families and necessary utilities to keep the city running.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> Greybell Chapel - An ancient church built of gray stone. <strong>Notable NPC:</strong> Brother Cassiel, human priest, kind but weary, shelters the destitute.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Ashen Gate - A blackened arch marking the district’s boundary. <strong>Notable NPC:</strong> Thane Calder, dwarven mason, stoic and proud, restored the gate after a fire.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Cinder Plaza - A square named after a historic blaze. <strong>Notable NPC:</strong> Ember Freya, human (Werewolf) performer, fiery and bold, dances with flaming batons.</p>
+</li>
+</ul>
+<h2 id="district-14-fellview-village"><strong>District 14: Fellview Village</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-14-fellview-village" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Village overlooking rolling hills to the north west of Visas. Large farming community likely under the thumb of their noble landlords.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Golden Orchard - A grove producing prized apples. <strong>Notable NPC:</strong> Hilda Greenvale, human farmer, jovial and shrewd, renowned for her cider.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Rolling Barrow - A traveling market passing through weekly. <strong>Notable NPC:</strong> Tobren Cartwright, dwarf trader, cheerful and persistent, loves haggling.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Old Watchtower - An abandoned outpost with a sweeping view. <strong>Notable NPC:</strong> Edric Tallon, human ranger, quiet and observant, watches for bandits.</p>
+</li>
+</ul>
+<h2 id="district-15-pillar-meridian"><strong>District 15: Pillar-Meridian</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-15-pillar-meridian" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Central Island where <a href="../../../../../the-Synod" class="internal alias" data-slug="the-Synod">the Synod</a> and Crystal College have their HQ. Named after a literal translation of the elven name for the place.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Synod" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Synod">The Synod</a> Sanctum - Headquarters of the church. <strong>Notable NPC:</strong> High Pontiff Salvoris, human cleric, stern and devout, a polarizing figure.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Crystal Spire - <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Crystal-College" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Crystal-College">The Crystal College</a>’s imposing main tower. <strong>Notable NPC:</strong> Grand Magister Thalos, elven mage, aloof and brilliant, rumored to have a secret agenda.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Bridge of Concord - A majestic bridge linking the city halves. <strong>Notable NPC:</strong> Master Stonemason Yorrick, dwarf artisan, jovial and meticulous, designed the bridge.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Tollbridge Inn - A Tavern that straddles the road over the bridge like an arch. <strong>Notable NPC:</strong> Wogan the Innkeeper</p>
+<ul>
+<li>
+<p><strong>POI:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Crystal-College" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Crystal-College">The Crystal College</a> - HQ of the Wizards. <strong>Notable NPCs:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Valtor" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Valtor">Magister Valtor</a>, <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Galvotas" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Galvotas">Magister Galvotas</a> <a href="../../../../../Archmage-Galdradur" class="internal alias" data-slug="Archmage-Galdradur">Archmage Galdradur</a> <a href="../../../../../Housekeeper-Bildred" class="internal alias" data-slug="Housekeeper-Bildred">Housekeeper Bildred</a></p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="district-16-elverpot-cove"><strong>District 16: Elverpot Cove</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-16-elverpot-cove" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Poorer area docklands, known for eel fisheries and smuggling.</p>
+<ul>
+<li>
+<p><strong>POI:</strong> The Eel Pits - A series of fisheries harvesting giant eels. <strong>Notable NPC:</strong> Kara “Slip”, half-elf fisher, resourceful and daring, known for her slippery escapes.</p>
+</li>
+<li>
+<p><strong>POI:</strong> Smuggler’s Rest - A hidden dock for illicit goods and clandestine meetings.
+<strong>Notable NPC:</strong> Lukas “Shroud”, human rogue, cunning and elusive, always a step ahead of the law.</p>
+</li>
+<li>
+<p><strong>POI:</strong> The Triton’s Tit - Front for Grasks hideout
+<strong>Notable NPC:</strong> Grask, Flind Street ganger, dissident and demon corrupted</p>
+</li>
+</ul>
+<h2 id="district-17-willowmere"><strong>District 17: Willowmere</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-17-willowmere" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Affluent residential district with tranquil canals, tree-lined streets, and elegant townhouses home to merchants and minor nobles. Known for the Willow Promenade and boutique artisan workshops, it exudes quiet prosperity. Beneath its charm, rivalries and clandestine dealings hint at hidden tensions. Wherever there are nobles and money you will find Flind Street and The Troupe.</p>
+<ul>
+<li><strong>POI:</strong> The Silver Willow - A serene park with a mystical, shimmering willow tree.<br/>
+<strong>Notable NPC:</strong> Elaris Moonshade, elven druid, calm and wise, protector of the park’s natural magic.</li>
+<li><strong>POI:</strong> Willowmere Academy - A prestigious school for wealthy children.<br/>
+<strong>Notable NPC:</strong> Headmistress Belandra, human educator, stern but fair, dedicated to her students’ success.</li>
+<li><strong>POI:</strong> The Glimmering Chalice - A high-end tavern known for its unique cocktails.<br/>
+<strong>Notable NPC:</strong> Darien Thistlebrew, half elf mixologist, charming and inventive, creator of signature enchanted drinks.</li>
+<li><strong>POI:</strong> Kepheros’ Glasshouse - A large greenhouse and orangery tended by <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Synod" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Synod">The Synod</a>.
+<strong>Notable NPC:</strong> Alva Mazarie Damun , Dessicated Isle Vampire botanist, Slightly neurotic but can grow anything in any climate. Her Dessicated Isle title is Amirat Alsumi (Princess of Poison)
+Amirat Alsumi Alva Mazarie <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/Necromancer-Cult/Damun" class="internal" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/Necromancer-Cult/Damun">Damun</a></li>
+</ul>
+<h2 id="district-18-the-spelt-belt"><strong>District 18: The Spelt Belt</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-18-the-spelt-belt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Noble estates, likely landowners, named after the spelt for farming and its gold colour indicating wealth.</p>
+<ul>
+<li><strong>POI:</strong> Goldgrain Estates - Expansive farmlands owned by noble families.<br/>
+<strong>Notable NPC:</strong> Lord Elric Montclare, human noble, shrewd and ambitious, invests heavily in agriculture.</li>
+<li><strong>POI:</strong> The Golden Mill - A grand windmill used for processing the district’s famed spelt.<br/>
+<strong>Notable NPC:</strong> Maren Windrow, human miller, hardworking and good-natured, deeply connected to the land.</li>
+<li><strong>POI:</strong> Harvest Hall - A large communal hall for festivals and gatherings.<br/>
+<strong>Notable NPC:</strong> Rhea Sunforge, human blacksmith, jovial and hardworking, forges ceremonial tools for festivals.</li>
+</ul>
+<h2 id="district-19-the-undercity"><strong>District 19: The Undercity</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#district-19-the-undercity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The labyrinth of tunnels and abandoned buildings beneath the city, now home to monsters but with many forgotten treasures to find.</p>
+<ul>
+<li><strong>POI:</strong> Grothole Market - An underground bazaar for rare and forbidden items.<br/>
+<strong>Notable NPC:</strong> Shyra “Shade”, elf merchant, enigmatic and persuasive, deals in secrets as much as goods.</li>
+<li><strong>POI:</strong> The Labyrinth - A network of tunnels and hidden chambers filled with danger and treasure.<br/>
+<strong>Notable NPC:</strong> Torvik Ironhand, dwarf adventurer, grizzled and fearless, guides explorers through the maze for a price.</li>
+<li><strong>POI:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King">The Rat King</a>’s Throne - The lair of <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King">The Rat King</a>, a monstrous and intelligent rat ruler.<br/>
+<strong>Notable NPC:</strong> <a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/The-Rat-King">The Rat King</a>, mutant rat monstrosity, cunning but descending into madness, controls a legion of loyal rats.</li>
+</ul>
+<h1 id="notable-npcs">Notable NPCs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notable-npcs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="nobles">Nobles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nobles" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Lady Visas</p>
+<p>Lord Elric Montclare, human noble, shrewd and ambitious, invests heavily in agriculture.</p>
+<p>Count Auren Malcis, human diplomat, charming but manipulative, wields great influence.</p>
+<p>Lady Isolde Fairfax, human noble, aloof but politically shrewd, collector of rare birds.</p>
+<p>Lady Halten Iris, elven botanist, enigmatic and scholarly, cultivates magical flora.</p>
+<p>Sir Garrick Hollis, human knight, brave but vain, a local jousting champion.</p>
+<h2 id="crystal-college">Crystal College<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#crystal-college" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Valtor" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Valtor">Magister Valtor</a></p>
+<p><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Galvotas" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Ally-Almanac/Wizards/Magister-Galvotas">Magister Galvotas</a></p>
+<p><a href="../../../../../Archmage-Galdradur" class="internal alias" data-slug="Archmage-Galdradur">Archmage Galdradur</a></p>
+<p><a href="../../../../../Housekeeper-Bildred" class="internal alias" data-slug="Housekeeper-Bildred">Housekeeper Bildred</a></p>
+<p><a href="../../../../../Magister-Mouldrin" class="internal alias" data-slug="Magister-Mouldrin">Magister Mouldrin</a>  - proponent of Necromancy restoration in the college</p>
+<h2 id="the-synod">The Synod<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-synod" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../../../../High-Pontiff-Salvoris" class="internal alias" data-slug="High-Pontiff-Salvoris">High Pontiff Salvoris</a> , human cleric, stern and devout, a polarizing figure. True Synod leader but overshadowed by saint derisor</p>
+<p><a href="../../../../../Saint-Derisor" class="internal alias" data-slug="Saint-Derisor">Saint Derisor</a> - Reborn Silver Knight, resurrected by Calvus. Spiteful and fuelled by hate as their deeds have been forgotten. Wants to show what things would have been like without them.</p>
+<p>Deacon Tondir, human cleric, devout but melancholy, once a wandering priest. Fervently beleives Saint Derisor as he has seen corruption of demons first hand.</p>
+<p><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/Necromancer-Cult/Vanta-Shikari" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/Necromancer-Cult/Vanta-Shikari">Vanta Shikari</a> - Posing as a nun to control Derisor.</p>
+<h2 id="underworld">Underworld<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#underworld" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../../../../Trevor" class="internal" data-slug="Trevor">Trevor</a>- Flind Street Gang leader, Edna’s Son, Has gained demonic powers, commands hell hounds but regrets it now the city is plagued.</p>
+<p>William Roberts Senior Piemaker “<a href="../../../../../Billie-Bob" class="internal alias" data-slug="Billie-Bob">Billie Bob</a> S” - Pie Stall owner and informant for whoever pays most. Has children working at almost everywhere. (Maybe make him the old Flind leader in disguise, faked his death to let Trevor succeed him)</p>
+<p>Grask</p>
+<h2 id="troupe-of-fools">Troupe of Fools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#troupe-of-fools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Dr Grimkoff - Leader of The Troupe of Fools</p>
+<p>Marcel and Atikins - Mime Assassins and bodyguards for Dr Grimkoff</p>
+<p><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Troupe-of-Fools/Vilrick-and-Zephon" class="internal alias" data-slug="Elderwood-Vault-Wiki/Elderwood-World-Building/Groups-and-Organisations/The-Troupe-of-Fools/Vilrick-and-Zephon">Vilrick and Zephon</a></p>
+<h2 id="world-below">World Below<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#world-below" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../../../../Rat-King" class="internal alias" data-slug="Rat-King">Rat King</a></p>
+<p>Skretch Headstalker</p>
+<p>Thulk Marrowlash</p>
+<p>Qilziek Dustspine</p>
+<p>Calvus</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-19" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#map" data-for="map">MAP</a></li><li class="depth-0"><a href="#points-of-interest-ordered-by-district" data-for="points-of-interest-ordered-by-district">Points of Interest Ordered by District</a></li><li class="depth-1"><a href="#district-1-the-moonlight-district" data-for="district-1-the-moonlight-district">District 1: The Moonlight District</a></li><li class="depth-1"><a href="#district-2-the-warrens" data-for="district-2-the-warrens">District 2: The Warrens</a></li><li class="depth-1"><a href="#district-3-high-perch-estates" data-for="district-3-high-perch-estates">District 3: High Perch Estates</a></li><li class="depth-1"><a href="#district-4-crowfoot-terrace" data-for="district-4-crowfoot-terrace">District 4: Crowfoot Terrace</a></li><li class="depth-1"><a href="#district-5-the-mist" data-for="district-5-the-mist">District 5: The Mist</a></li><li class="depth-1"><a href="#district-6-the-manaflood" data-for="district-6-the-manaflood">District 6: The Manaflood</a></li><li class="depth-1"><a href="#district-7-shardspire-ward" data-for="district-7-shardspire-ward">District 7: Shardspire Ward</a></li><li class="depth-1"><a href="#district-8-coronet-parade" data-for="district-8-coronet-parade">District 8: Coronet Parade</a></li><li class="depth-1"><a href="#district-9-lantern-veil-wharf" data-for="district-9-lantern-veil-wharf">District 9: Lantern Veil Wharf</a></li><li class="depth-1"><a href="#district-10-duskridge-crossing" data-for="district-10-duskridge-crossing">District 10: Duskridge Crossing</a></li><li class="depth-1"><a href="#district-11-arx-regnatrix" data-for="district-11-arx-regnatrix">District 11: Arx Regnatrix</a></li><li class="depth-1"><a href="#district-12-the-fangs" data-for="district-12-the-fangs">District 12: The Fangs</a></li><li class="depth-1"><a href="#district-13-sableston-cross" data-for="district-13-sableston-cross">District 13: Sableston Cross</a></li><li class="depth-1"><a href="#district-14-fellview-village" data-for="district-14-fellview-village">District 14: Fellview Village</a></li><li class="depth-1"><a href="#district-15-pillar-meridian" data-for="district-15-pillar-meridian">District 15: Pillar-Meridian</a></li><li class="depth-1"><a href="#district-16-elverpot-cove" data-for="district-16-elverpot-cove">District 16: Elverpot Cove</a></li><li class="depth-1"><a href="#district-17-willowmere" data-for="district-17-willowmere">District 17: Willowmere</a></li><li class="depth-1"><a href="#district-18-the-spelt-belt" data-for="district-18-the-spelt-belt">District 18: The Spelt Belt</a></li><li class="depth-1"><a href="#district-19-the-undercity" data-for="district-19-the-undercity">District 19: The Undercity</a></li><li class="depth-0"><a href="#notable-npcs" data-for="notable-npcs">Notable NPCs</a></li><li class="depth-1"><a href="#nobles" data-for="nobles">Nobles</a></li><li class="depth-1"><a href="#crystal-college" data-for="crystal-college">Crystal College</a></li><li class="depth-1"><a href="#the-synod" data-for="the-synod">The Synod</a></li><li class="depth-1"><a href="#underworld" data-for="underworld">Underworld</a></li><li class="depth-1"><a href="#troupe-of-fools" data-for="troupe-of-fools">Troupe of Fools</a></li><li class="depth-1"><a href="#world-below" data-for="world-below">World Below</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../../../../Elderwood-Vault-Wiki/DM-Schemes/LMM-Overview/Section-Three-Major-Factions-and-Societies" class="internal">Section Three Major Factions and Societies</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/DM-Schemes/LMM-Overview/Section-Two-Geography-and-Locations" class="internal">Section Two Geography and Locations</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/DM-Schemes/Session-Prep/Arcs/Vice-in-Visas/260225/Grasks-Hideout" class="internal">Grasks Hideout</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/The-Human-Reserve" class="internal">The Human Reserve</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/The-Last-Laugh" class="internal">The Last Laugh</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Atlas-of-Elderwood/The-Human-Reserve/Visas/Visas-WIP" class="internal">Visas WIP</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/Elderwood-World-Building/Characters-and-Creatures/Adversary-Archives/Necromancer-Cult/Damun" class="internal">Damun</a></li><li><a href="../../../../../Elderwood-Vault-Wiki/The-Rat-King’s-Throne" class="internal">The Rat King’s Throne</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../../../../postscript.js" type="module"></script></html>
